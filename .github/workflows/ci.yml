@@ -11,7 +11,7 @@ jobs:
       - uses: actions/setup-python@v2
         with:
           python-version: 3.x
-      - run: pip install mkdocs-material==1.2.1
+      - run: pip install mkdocs==1.2.1
       - run: pip install mkdocs-material==7.1.10
       - run: pip install mkdocs-exclude==1.0.2
       - run: pip install mkdocs-roamlinks-plugin==0.1.3
