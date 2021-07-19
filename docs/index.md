@@ -1,17 +1,7 @@
-# Foam-mkdocs-template
-Welcome to Foam-mkdocs-template! [[#support roamlinks]]!
+# Hello 👋🏽
+Welcome to my BITS WILP Knowledge Base. This is the place where all the notes I take as part of my learning process here at BITS WILP is hosted in a single place for ease of access. My primary goal for this is to help myself and other class mates who need to juggle their work and class life at the same time and are finding it hard to revise classes that they attended on weekends. 
 
-* How to create this website and share your foam/obsidian notes? See: [[tutorial]]
-* [foam](https://github.com/foambubble/foam)
+My learning method includes taking a lot of notes through a tool called [Obsidian](https://obsidian.md/). This website simply hosts that vault of [Obsidian](https://obsidian.md/) notes.
 
-
-## Support roamlinks
-
-| origin                  | convert                             |
-| ----------------------- | ----------------------------------- |
-| `[Git Flow](git_flow.md)` | `[Git Flow](../software/git_flow.md)` |
-| `[[Git Flow]]`            | `[Git Flow](../software/git_flow.md)` |
-| `![[image.png]]`           | `![image.png](../image/imag.png)`      |
-| `[[#Heading identifiers]]` | `[Heading identifiers in HTML](#heading-identifiers-in-html)`|
-| `[[Git Flow#Heading]]`     |  `[Git Flow](../software/git_flow.md#heading)` |
+Now that you know what this is all about, dive into the [[InductionOrienatation]] page.
 

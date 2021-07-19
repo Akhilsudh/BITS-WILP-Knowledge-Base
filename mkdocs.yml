@@ -2,14 +2,30 @@
 # mkdocs-material: https://squidfunk.github.io/mkdocs-material/
 # mkdocs: https://www.mkdocs.org/user-guide/configuration/
 
-site_name: Akhil-Sudhakaran
+site_name: BITS WILP Knowledge Base
 theme:
   name: material
+  logo: Assets/logo.png
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: yellow
+      accent: yellow
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue grey
+      accent: blue grey
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
   #  favicon: attachment/portrait.png
-  language: en # 中文，解决中文搜索问题
+  language: en
   features:
-    - navigation.expand 
-    - tabs 
+    #- navigation.expand 
+    #- tabs 
 markdown_extensions: 
   - attr_list # https://squidfunk.github.io/mkdocs-material/reference/images/
   - pymdownx.tabbed  # https://squidfunk.github.io/mkdocs-material/reference/content-tabs/
@@ -24,7 +40,8 @@ markdown_extensions:
   - footnotes
   - meta
   - def_list
-  - pymdownx.arithmatex
+  - pymdownx.arithmatex:
+      generic: true
   - pymdownx.betterem:
       smart_enable: all
   - pymdownx.caret
@@ -50,3 +67,7 @@ plugins:
         - "*.gz"
       regex:
         - '.*\.(tmp|bin|tar)$'
+extra_javascript:
+  - javascripts/config.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
