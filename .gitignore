@@ -1,0 +1,7 @@
+# Obsidian Cached Files
+**/.obsidian/cache
+**/.obsidian/workspace
+
+# System Files
+**/.trash/
+**/.DS_Store
