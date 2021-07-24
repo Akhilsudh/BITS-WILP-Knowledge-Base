@@ -2,22 +2,22 @@
 # mkdocs-material: https://squidfunk.github.io/mkdocs-material/
 # mkdocs: https://www.mkdocs.org/user-guide/configuration/
 
-site_name: BITS WILP Knowledge Base
+site_name: My BITS WILP Knowledge Base
 theme:
   name: material
   logo: Assets/logo.png
   palette:
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: yellow
-      accent: yellow
+      primary: green
+      accent: green
       toggle:
         icon: material/weather-night
         name: Switch to light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: blue grey
-      accent: blue grey
+      primary: teal
+      accent: teal
       toggle:
         icon: material/weather-sunny
         name: Switch to dark mode

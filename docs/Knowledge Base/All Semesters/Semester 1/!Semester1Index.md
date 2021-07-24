@@ -3,4 +3,4 @@
 This is an Index page for all Semester 1 Content
 
 ---
-Tags: [[AllSemestersIndex]]
+Tags: [[!AllSemestersIndex]]

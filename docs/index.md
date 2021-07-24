@@ -1,7 +1,9 @@
 # Hello 👋🏽
-Welcome to my BITS WILP Knowledge Base. This is the place where all the notes I take as part of my learning process here at BITS WILP is hosted in a single place for ease of access. My primary goal for this is to help myself and other class mates who need to juggle their work and class life at the same time and are finding it hard to revise classes that they attended on weekends. 
+Welcome to my BITS WILP Knowledge Base. This is a personal note book for all the notes I take as part of my journey here at BITS. To know more about what a knowledge base is check [this](https://en.wikipedia.org/wiki/Knowledge_base) out.
 
-My learning method includes taking a lot of notes through a tool called [Obsidian](https://obsidian.md/). This website simply hosts that vault of [Obsidian](https://obsidian.md/) notes.
+## So what is the purpose of this? 🤷🏽‍♂️
+My learning method includes taking a lot of notes through a local note taking tool called [Obsidian](https://obsidian.md/). This website simply hosts that vault of Obsidian notes. The purpose of this page is to make the notes taken throughout my coursework accessible to myself and others in the same boat as me. Maybe this can help you too 🤘🏽
+To know more about Obsidian and what it is, you can read about it in my blog article [here](https://justanothergeek.hashnode.dev/obsidian-as-a-second-brain)
 
-Now that you know what this is all about, dive into the [[InductionOrienatation]] page.
-
+## So what now? 💁🏽‍♂️
+Now that you know what this page is all about, dive into the [[InductionOrienatation]] page to enter the first index page to this knowledge base. :)
