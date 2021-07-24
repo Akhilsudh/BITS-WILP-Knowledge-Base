@@ -28,12 +28,12 @@ Quizzes and Assignments will be done online in elearn portal
 Collection of indipendent individual entites (Can function on it's own) to solve a given task collectively
 ```mermaid
 graph LR
-A[PM]----G
-B[PM]----G
-C[PM]----G
-G----D[PM]
-G----E[PM]
-G----F[PM]
+A[PM]---G
+B[PM]---G
+C[PM]---G
+G---D[PM]
+G---E[PM]
+G---F[PM]
 G((Communication Network WAN/LAN))
 ```
 
@@ -49,11 +49,11 @@ G((Communication Network WAN/LAN))
 
 ```mermaid
 graph TB
-A[Application]----G
-B[Application]----G
-G----H
-H----E[Platform1]
-H----F[Platform2]
+A[Application]---G
+B[Application]---G
+G---H
+H---E[Platform1]
+H---F[Platform2]
 G[Application Programming Interface API]
 H[Middleware Distributed Systems Services]
 ```
