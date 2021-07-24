@@ -43,4 +43,31 @@ G((Communication Network WAN/LAN))
 	2. The processors of the nodes are loosely coupled
 	3. Different processor speeds and operating systems are allowed
 	4. And despite all these differences they cooperate with one another
-	5. 
+
+
+```mermaid
+graph TB
+A[Application]----G
+B[Application]----G
+G----H
+H----E[Platform1]
+H----F[Platform2]
+G[Application Programming Interface API]
+H[Middleware Distributed Systems Services]
+```
+
+Middleware drives the distributed system and the heterogeneity at a platform level is abstracted by APIs.
+
+Common Object Request Broker Architecture (CORBA)
+Remote Procedure Cal (RPC)
+Distributed Compnent Object Model (DCOM)
+Remote Method Invocation (RNI)
+
+
+### Motivations for a distributed system
+1. Share resources
+2. Access to resources from different geographical locations (Like AWS Cloud servers at different locations or even a work from home situation can be covered)
+3. Increased performance/cost ratio, since there is a large resource pool and programs can be written in a way to efficiently use that pool to get tasks done more quickly
+4. Reliability, in the sense that since the system is distributed, even if one system breaks down, there is still a degree of availability of resources.
+5. Scaling, in the sense that it is easy to increase performance by merely adding more nodes to a distributed system.
+6.  Modularity and Incrememntal Expandability.
