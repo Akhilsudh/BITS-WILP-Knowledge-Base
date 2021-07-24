@@ -35,13 +35,13 @@ Apart from the above services, students also have access to Experimental Learnin
 	2. A Comprehensive Exam
 2. Each of these two exams are conducted twice as a regular mode and a make up mode where one can take an examination at a separate date if one was not able to join the regular exam.
 
-Evaluative Components:
+### Evaluative Components:
 
 | Evaluative Component | Name                     | Type             | Duration               | Session                     | Weightage |
 | -------------------- | ------------------------ | ---------------- | ---------------------- | --------------------------- | --------- |
-| EC-1                 | Quizzes/Assignments/Labs | Online           | As per course handouts | As per course page          | ~30%      |
+| EC-1                 | Quizzes/Assignments/Labs | Online           | As per course handouts | As per course page          | ~20%      |
 | EC-2                 | Mid-Semester Test        | Online Open Book | 2 Hours                | Friday, Saturday and Sunday | ~30%      |
-| EC-3                 | Quizzes/Assignments/Labs | Online Open Book | 2 Hours                | Friday, Saturday and Sunday | ~40%      | 
+| EC-3                 | Quizzes/Assignments/Labs | Online Open Book | 2 Hours                | Friday, Saturday and Sunday | ~50%      | 
 
 ## Program Specific Orientation (Software Systems with Data Analytics Specialization)
 ### Course Structure
@@ -72,7 +72,7 @@ The Specialization pool of electives for Data Analytics are as follows:
 8. ***Mathematical Foundations for Data Science*** (This is a mandatory course for this specialization)
 9. Natural Language Processing
 
-### Semester Organization
+### Semester Organization for Software Systems
 | Year | Semester I                          | Units       | Semester II             | Units       |
 | ---- | ----------------------------------- | ----------- | ----------------------- | ----------- |
 | I    | Data Structures & Algorithms Design | 5           | Software  Architectures | 5           |

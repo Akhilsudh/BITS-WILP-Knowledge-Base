@@ -7,13 +7,6 @@ theme:
   name: material
   logo: Assets/logo.png
   palette:
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: green
-      accent: green
-      toggle:
-        icon: material/weather-night
-        name: Switch to light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: teal
@@ -21,6 +14,13 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: green
+      accent: green
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
   #  favicon: attachment/portrait.png
   language: en
   features:
