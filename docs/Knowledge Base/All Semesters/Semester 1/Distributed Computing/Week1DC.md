@@ -1,7 +1,7 @@
 # Week 1 
-Lecturer: [Barsha Mitra](http://a.impartus.com/#/profile/1985732), CSIS Dept, BITS Pilani, Hyederabad Campus
+**Lecturer**: [Barsha Mitra](http://a.impartus.com/#/profile/1985732), CSIS Dept, BITS Pilani, Hyederabad Campus
 [![MailBadge](https://img.shields.io/badge/-barsha.mitra@hyderabad.bits--pilani.ac.in-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:barsha.mitra@hyderabad.bits-pilani.ac.in)
-Date: 24/Jul/2021
+**Date**: 24/Jul/2021
 
 **NOTE THAT THIS PAGE HAS DIAGRAMS THAT ARE BEST VIEWED IN LIGHT MODE**
 
@@ -61,9 +61,9 @@ H[Middleware Distributed Systems Services]
 Middleware drives the distributed system and the heterogeneity at a platform level is abstracted by APIs.
 
 Common Object Request Broker Architecture (CORBA)
-Remote Procedure Cal (RPC)
-Distributed Compnent Object Model (DCOM)
-Remote Method Invocation (RNI)
+Remote Procedure Call (RPC)
+Distributed Component Object Model (DCOM)
+Remote Method Invocation (RMI)
 
 
 ### Motivations for a distributed system
