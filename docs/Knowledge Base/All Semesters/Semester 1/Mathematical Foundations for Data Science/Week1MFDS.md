@@ -3,8 +3,6 @@
 [![MailBadge](https://img.shields.io/badge/-barsha.mitra@hyderabad.bits--pilani.ac.in-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:barsha.mitra@hyderabad.bits-pilani.ac.in)
 **Date**: 25/Jul/2021
 
-**NOTE THAT THIS PAGE HAS DIAGRAMS THAT ARE BEST VIEWED IN LIGHT MODE**
-
 ## Topics covered
 1. Matrices and their types
 2. REF and RREF
@@ -83,3 +81,4 @@ $$
 where\ j = 1, . . . , m\ and\ k = 1, . . . , p
 $$
 
+### REF

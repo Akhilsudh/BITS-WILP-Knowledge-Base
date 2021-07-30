@@ -55,10 +55,28 @@ Given two algorithms has two implementations where:
 2. **B algorithm** that runs proportional to N<sup>2</sup>
 we need to ideally makes sure that the algorithm chosen is the one that is proprtional to N since for a very large input A would perform better.
 
-Addition, Multiplication, Subtraction and Division are exmaples of primitive operations. Primitive operation are those that cannot be further broken down to more simpler steps. For example given:
+Addition, Multiplication, Subtraction and Division are exmaples of primitive operations. Primitive operation are those that cannot be further broken down to more simpler steps.
+
+In the above algorithm we can see the analysis as follows:
+```
+currentMax <- A[0]					---> 1
+i <- 1								---> 1
+for i < n							---> n (1 for the comparison)
+	if currentMax < A[i] then			---> 1
+		currentMax <- A[i]				---> 1
+	i = i + 1							---> 1
+return currentMax					---> n
+```
+From the above analysis we can say that the algorithm time complexity is:
 
 $$
-CGPA = {(U_1G_1 + U_2G_2 + U_3G_3 + U_4G_4)\over(U1 + U2 + U3 + U4)}
+TimeComplexity < (1 + 1 + n * (1 + 1 + 1 + 1) + 1)
 $$
-  
-  adsf
+$$
+TimeComplexity < 4n + 3
+$$
+$$
+TimeComplexity < 5n\ (for\ n > 3)
+$$
+
+We say ```<``` because there are cases where the statements under the if condition is not calculated. 

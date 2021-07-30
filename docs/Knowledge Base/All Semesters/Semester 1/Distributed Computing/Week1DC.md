@@ -3,7 +3,7 @@
 [![MailBadge](https://img.shields.io/badge/-barsha.mitra@hyderabad.bits--pilani.ac.in-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:barsha.mitra@hyderabad.bits-pilani.ac.in)
 **Date**: 24/Jul/2021
 
-**NOTE THAT THIS PAGE HAS DIAGRAMS THAT ARE BEST VIEWED IN LIGHT MODE**
+**NOTE THAT THIS PAGE HAS DIAGRAMS THAT ARE BEST VISIBLE IN LIGHT MODE**
 
 ## Topics covered
 1. What is a distributed system?
@@ -14,7 +14,7 @@ C, C++, Java, Python
 virtual lab
 
 ## What is a flipped mode course?
-A couerse where there is content from a courseware and a live lecture
+A course where there is content from a course ware and a live lecture
 
 the events 
 Quizzes and Assignments will be done online in elearn portal
@@ -41,7 +41,7 @@ G((Communication Network WAN/LAN))
 2. No shared memory - employs message passing for communication
 3. Geographical separation - All the nodes taking part in the problem solving can be placed in different locations geographically
 4. Autonomy and heterogeneity
-	1. Each node is a fully finsctioning independent system irrespective of being taking part in a distributed system.
+	1. Each node is a fully functioning independent system irrespective of being taking part in a distributed system.
 	2. The processors of the nodes are loosely coupled
 	3. Different processor speeds and operating systems are allowed
 	4. And despite all these differences they cooperate with one another
@@ -72,12 +72,12 @@ Remote Method Invocation (RMI)
 3. Increased performance/cost ratio, since there is a large resource pool and programs can be written in a way to efficiently use that pool to get tasks done more quickly
 4. Reliability, in the sense that since the system is distributed, even if one system breaks down, there is still a degree of availability of resources.
 5. Scaling, in the sense that it is easy to increase performance by merely adding more nodes to a distributed system.
-6.  Modularity and Incrememntal Expandability.
+6.  Modularity and Incremental Expandability.
 
 
 ### Coupling
-High coupling: Homogenous modules and hence have more restrictions imposed on these systems
-Low couping: Heterogenous modules and hence more flexibility is gained
+High coupling: Homogeneous modules and hence have more restrictions imposed on these systems
+Low coupling: Heterogeneous modules and hence more flexibility is gained
 
 ### Parallel Systems
 1. Multiprocessor systems:
