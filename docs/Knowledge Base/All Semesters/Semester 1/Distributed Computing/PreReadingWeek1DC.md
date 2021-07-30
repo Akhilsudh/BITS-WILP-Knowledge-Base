@@ -21,7 +21,7 @@ Some popular examples of Distributed computing:
 - In a Symmetric multi processor machine all CPUs have the autonomy of deciding what it needs to be done (No master slave)
 - In an Asymmetric multi processor machine, there is a concept of master slave where the master processor decide what the other processors needs to compute.
 	![[Pasted image 20210729213134.png]]
-- The multiple processors can connect to a particular memory bank when a particular switch is clicked on in the case of **cross point switch**, this method is not feasibile since the number of cross connection can be limiting for very large configurations of CPU and memory banks
+- The multiple processors can connect to a particular memory bank when a particular switch is clicked on in the case of **cross point switch**, this method is not feasible since the number of cross connection can be limiting for very large configurations of CPU and memory banks
 - In case of an **omega switching network**, each omega switch is arranged in stages and the layers allow for lesser switches to pair the CPUs to the memory banks
 - In both of the above cases the s
 ##### Multi-computer
@@ -167,9 +167,9 @@ P3--c4-->P1
 - A local state of a process is the current execution state at which a particular process is in.
 - A Global state of a DS is a collection of such above mentioned local states of processes and channels
 - The global state $GS$ is defined as:
-	$$
-	GS = \{\ \bigcup_i\ LS_i^{xi}\ ,\ \bigcup_{j,k}\ SC_{jk}^{yj,\ zk}\ \}
-  $$
+	
+	$$GS = \{\ \bigcup_i\ LS_i^{xi}\ ,\ \bigcup_{j,k}\ SC_{jk}^{yj,\ zk}\ \}$$
+	
 	$GS$ is the union of all Local States of all machines and all the messages across all the message channels.
 - A $GS$ is meaningful only when all the states of all the components of the DS are recorded at the same instant
 - The only way that is possible is when all the processes are synchronous in nature or if there were a global, instantaneously accessible clock (Both of which are impossible in a typical DS)
@@ -190,28 +190,21 @@ Lamport Logical Clocks (Scalar Time)
 ##### Scalar Time
 - In a scalar time clock, we condense the process, its local view of the global time into a single variable called $C_i$.
 - With the above assumption there exists 2 rules to update the internal clock:
-	1. **Rule 1**: Before executing an event, process $p_i$ executes the clock value to be as:
+	1. **Rule 1**: Before executing an event, process $p_i$ executes the clock value to be as: 
 		
-		$$
-		C_i := C_i + d\ \ \ (d > 0)	
-    $$
+		$$ C_i := C_i + d\ \ \ (d > 0) $$
 	
 		In general, every time $R_1$ is executed, $d$ can also have a different value.
 	2. **Rule 2**: Each message piggybacks the clock value of its sender at sending time. When a process $p_i$ receives a message with timestamp $C{msg}$, it executes the following actions:
 		
-		1. $$
-		C_i := max(C_i, C_{msg})
-	 $$
-	 	
+		1.  $$ C_i := max(C_i, C_{msg}) $$	 	
 		2. Execute $R_1$
 		3. Deliver the message
 - Example:
 	 ![[Pasted image 20210731012809.png]]
 	Looking at the above scenario we can infer that if one event ($e_i$) sends a message to another event($e_j$) we can say that:
 	
-	$$
-	for\ two\ events\ e_i\ and\ e_j\ ,\ e_i\ ->\ e_j =>C(e_i) < C(e_j)
-  $$
+	$$ for\ two\ events\ e_i\ and\ e_j\ ,\ e_i\ ->\ e_j =>C(e_i) < C(e_j) $$
     
 	But the reverse is not true. 
 - **There are the following problems when it comes to this clock**:

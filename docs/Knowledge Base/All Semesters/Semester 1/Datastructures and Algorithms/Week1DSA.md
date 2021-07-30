@@ -69,16 +69,10 @@ return currentMax					---> n
 ```
 From the above analysis we can say that the algorithm time complexity is:
 
-$$
-TimeComplexity < (1 + 1 + n * (1 + 1 + 1 + 1) + 1)
-$$
+$$TimeComplexity < (1 + 1 + n * (1 + 1 + 1 + 1) + 1)$$
 
-$$
-TimeComplexity < 4n + 3
-$$
+$$TimeComplexity < 4n + 3$$
 
-$$
-TimeComplexity < 5n\ (for\ n > 3)
-$$
+$$TimeComplexity < 5n\ (for\ n > 3)$$
 
 We say $<$ because there are cases where the statements under the if condition is not calculated. 
