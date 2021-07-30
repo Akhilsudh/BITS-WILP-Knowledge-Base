@@ -191,11 +191,14 @@ Lamport Logical Clocks (Scalar Time)
 - In a scalar time clock, we condense the process, its local view of the global time into a single variable called $C_i$.
 - With the above assumption there exists 2 rules to update the internal clock:
 	1. **Rule 1**: Before executing an event, process $p_i$ executes the clock value to be as:
+		
 		$$
 		C_i := C_i + d\ \ \ (d > 0)	
     $$
+	
 		In general, every time $R_1$ is executed, $d$ can also have a different value.
 	2. **Rule 2**: Each message piggybacks the clock value of its sender at sending time. When a process $p_i$ receives a message with timestamp $C{msg}$, it executes the following actions:
+		
 		1. $$
 		C_i := max(C_i, C_{msg})
 	 $$
@@ -205,12 +208,13 @@ Lamport Logical Clocks (Scalar Time)
 - Example:
 	 ![[Pasted image 20210731012809.png]]
 	Looking at the above scenario we can infer that if one event ($e_i$) sends a message to another event($e_j$) we can say that:
+	
 	$$
 	for\ two\ events\ e_i\ and\ e_j\ ,\ e_i\ ->\ e_j =>C(e_i) < C(e_j)
   $$
-    But the reverse is not true. 
+    
+	But the reverse is not true. 
 - **There are the following problems when it comes to this clock**:
 	- **Non consistency**: We can never say that the event $e_1$ had happened before $e_5$ merely because the clock value of one was lesser than the other. This is because there is no direct or indirect link that connects $e_1$ to $e_5$.
 	- There is a problem when the clock values are same for two events. In this case we can take precedence by considering the precedence of the process itself (Take the process index values into consideration). Considering the above example $e_1$ and $e_3$ have the same clock values so we can never say which one happened before what, hence we can use the indexes of the process itself, since index of process $P_2$ is greater than process $P_1$ we can assume that $e_1$ has happened before $e_3$
-	- Another issue is the fact that this clock is not consistent in nature, by that we mean that
 	

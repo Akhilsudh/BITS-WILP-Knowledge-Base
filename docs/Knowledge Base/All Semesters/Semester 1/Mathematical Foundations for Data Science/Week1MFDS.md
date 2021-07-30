@@ -1,6 +1,5 @@
 # Week 1 
-**Lecturer**: [Barsha Mitra](http://a.impartus.com/#/profile/1985732), CSIS Dept, BITS Pilani, Hyederabad Campus
-[![MailBadge](https://img.shields.io/badge/-barsha.mitra@hyderabad.bits--pilani.ac.in-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:barsha.mitra@hyderabad.bits-pilani.ac.in)
+**Lecturer**: 
 **Date**: 25/Jul/2021
 
 ## Topics covered
@@ -22,10 +21,10 @@ C = \begin{bmatrix}a\\b\\c\end{bmatrix},
 D = \begin{bmatrix}a & b & c\end{bmatrix}
 $$
 
-Each element within the matrix (```a```, ```b```, ```c``` etc) are called entities
-Each matrix has a size that is represented as ```n x m``` where n is the number of rows and m is the number of columns. In the above example the array ```A``` has a **size** of ```2 x 4```
+Each element within the matrix ($a$, $b$, $c$ etc) are called entities
+Each matrix has a size that is represented as $n\ x\ m$ where $n$ is the number of rows and $m$ is the number of columns. In the above example the array $A$ has a **size** of $2\ x\ 4$
 
-out of the last two matrices in the above example the matrix ```C``` is what we call a column matrix and ```D``` is called a row matrix. The other word for it is column/row Vector and Vectors are usually denoted with lower case characcters  like this:
+out of the last two matrices in the above example the matrix $C$ is what we call a column matrix and $D$ is called a row matrix. The other word for it is column/row Vector and Vectors are usually denoted with lower case characters  like this:
 
 $$
 a = \begin{bmatrix}1\\2\\3\end{bmatrix},
@@ -57,28 +56,30 @@ $$ A + 0 = A $$
 
 $$ A + (-A) = 0 $$
 
-- **Multiplication**: Two matrices can only be multipled if the number of columns in the first part of the product equals the number of rows in the second part of the product to yield a product matrix with a size of the number of rows of the first part and the number of columns of the second part. The size of matrices after a product would look like this:
+- **Multiplication**: Two matrices can only be multiplied if the number of columns in the first part of the product equals the number of rows in the second part of the product to yield a product matrix with a size of the number of rows of the first part and the number of columns of the second part. The size of matrices after a product would look like this:
 
 $$
 A_(m*p) * B_(p*n) = C_(m*n)
 $$
 
-The formulae for caluclating the entites within the product matrix are as follows, given that ```i``` and ```j``` are the row and column number that identifies element of that matrix:
+The formulae for calculating the entities within the product matrix are as follows, given that $i$ and $j$ are the row and column number that identifies element of that matrix:
 
 $$
 A\ is\ an\ array\ with\ a_{ij}\ for\ entities\ and\ have\ size\ m*n
 $$
+
 $$
 B\ is\ an\ array\ with\ b_{ij}\ for\ entites\ and\ have\ size\ n*p
 $$
+
 $$
 C\ is\ the\ product\ array\ with\ c_{ij}\ for\ entites\ and\ have\ size\ n*m, then
 $$
+
 $$
 c_{ij} = \begin{equation}\sum_{k = 1}^{n}a_{ik}b_{kj}\end{equation}
 $$
+
 $$
 where\ j = 1, . . . , m\ and\ k = 1, . . . , p
 $$
-
-### REF
