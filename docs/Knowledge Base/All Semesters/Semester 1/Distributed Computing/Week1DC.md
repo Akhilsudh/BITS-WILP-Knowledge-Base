@@ -96,7 +96,7 @@ Low coupling: Heterogeneous modules and hence more flexibility is gained
 
 ### UMA (Uniform Memory Access) Model
 1. Direct access to shared memory
-2. Access latency: Waiting time to complete an access to any memory location from any processor
+2. **Access latency**: Waiting time to complete an access to any memory location from any processor
 3. Access latency is same for all processors
 4. Processors remain in close proximity
 5. Connected by an interconnection network

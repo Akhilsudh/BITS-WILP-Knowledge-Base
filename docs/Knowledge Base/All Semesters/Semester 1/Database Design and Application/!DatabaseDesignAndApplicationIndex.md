@@ -4,6 +4,8 @@ This is an Index page for all Database Design and Application Content
 
 - Week 1 Lecture
 	- [[Week1DBA]]
+- Week 2 Lecture
+	- [[Week2DBA]]
 
 ---
 Tags: [[!Semester1Index]]

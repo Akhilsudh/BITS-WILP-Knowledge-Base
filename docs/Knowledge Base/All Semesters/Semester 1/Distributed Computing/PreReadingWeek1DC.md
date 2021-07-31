@@ -69,6 +69,7 @@ Some popular examples of Distributed computing:
 	5. CML/RPC
 	6. SOAP/.NET
 	7. AJAX(Asynch. Javascript and XML)
+
 ![[Pasted image 20210729221354.png]]
 
 - In an RPC, there is a client machine that calls the procedures to the client-side stub (Which abstracts the remote calls)
