@@ -2,7 +2,7 @@
 **Lecturer**: 
 **Date**: 25/Jul/2021
 
-## Topics covered
+## Topics Covered
 1. Matrices and their types
 2. REF and RREF
 3. Rank, its computation and properties

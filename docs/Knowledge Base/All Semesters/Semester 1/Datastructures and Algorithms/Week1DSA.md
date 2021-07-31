@@ -1,13 +1,15 @@
 # Week 1 
-Lecturer: [Pritam Bhattacharya](http://a.impartus.com/#/profile/3467741)
-Date: 24/Jul/2021
-## Topics covered
+**Lecturer**: [Pritam Bhattacharya](http://a.impartus.com/#/profile/3467741), BITS Pilani, Goa Campus
+[![MailBadge](https://img.shields.io/badge/-pritamb@goa.bits--pilani.ac.in-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:pritamb@goa.bits-pilani.ac.in)
+**Date**: 24/Jul/2021
+
+## Topics Covered
 1. What is an algorithm?
 2. What is time and space complexity?
 
 
 ### What is an algorithm?
-An algorithm is a sequence of steps to be followed to reach a pre determined goal for a predetermined set of inputs. An algorithm has the following properties:
+An algorithm is a finite sequence of steps to be followed to reach a pre determined goal for a predetermined set of inputs. An algorithm has the following properties:
 1. **Finiteness**:  the sequence of steps the algorithm has must be finite
 2. **Definiteness**: Each step should be atomic and precise and cause no confusion on what it does
 3. **Input**: There may or may not be an input passed to the algorithm to work on
@@ -59,20 +61,23 @@ Addition, Multiplication, Subtraction and Division are examples of primitive ope
 
 In the above algorithm we can see the analysis as follows:
 ```
-currentMax <- A[0]					---> 1
-i <- 1								---> 1
-for i < n							---> n (1 for the comparison)
-	if currentMax < A[i] then			---> 1
-		currentMax <- A[i]				---> 1
-	i = i + 1							---> 1
-return currentMax					---> n
+currentMax <- A[0]			   ---> 2 = 1 (for indexing) + 1 (for assignment)
+i <- 1						   ---> 1 (for assignment)
+while i < n					   ---> n (1 for the every comparison)
+	if currentMax < A[i] then  	 ---> 2 = 1 (for indexing) + 1 (for comparison)
+		currentMax <- A[i]	   	 ---> 2 = 1 (for indexing) + 1 (for assignment)
+	i = i + 1					 ---> 2 = 1 (for addition) + 1 (for assignment)
+return currentMax			   ---> 1
 ```
-From the above analysis we can say that the algorithm time complexity is:
+From the above analysis we can say that the algorithm time complexity at the worst case where every iteration goes into the if block, is:
 
-$$TimeComplexity < (1 + 1 + n * (1 + 1 + 1 + 1) + 1)$$
+$$TimeComplexity < (2 + 1 + n + (n - 1) * (2 + 2 + 2) + 1)$$
 
-$$TimeComplexity < 4n + 3$$
+$$TimeComplexity < 7n - 2$$
 
-$$TimeComplexity < 5n\ (for\ n > 3)$$
+$$TimeComplexity < 7n$$
 
 We say $<$ because there are cases where the statements under the if condition is not calculated. 
+
+---
+Tags: [[!DatastructuresAndAlgorithmsIndex]]

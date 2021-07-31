@@ -6,4 +6,4 @@ My learning method includes taking a lot of notes through a local note taking to
 To know more about Obsidian and what it is, you can read about it in my blog article [here](https://justanothergeek.hashnode.dev/obsidian-as-a-second-brain)
 
 ## So what now? 💁🏽‍♂️
-Now that you know what this page is all about, dive into the [[InductionOrienatation]] page to enter the first index page to this knowledge base. :)
+Now that you know what this page is all about, dive into the [[!KBIndex]] page to enter the first index page to this knowledge base. :)

@@ -211,3 +211,5 @@ Lamport Logical Clocks (Scalar Time)
 	- **Non consistency**: We can never say that the event $e_1$ had happened before $e_5$ merely because the clock value of one was lesser than the other. This is because there is no direct or indirect link that connects $e_1$ to $e_5$.
 	- There is a problem when the clock values are same for two events. In this case we can take precedence by considering the precedence of the process itself (Take the process index values into consideration). Considering the above example $e_1$ and $e_3$ have the same clock values so we can never say which one happened before what, hence we can use the indexes of the process itself, since index of process $P_2$ is greater than process $P_1$ we can assume that $e_1$ has happened before $e_3$
 	
+---
+Tags: [[!DistributedComputingIndex]]

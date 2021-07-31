@@ -1,11 +1,11 @@
 # Week 1 
-**Lecturer**: [Barsha Mitra](http://a.impartus.com/#/profile/1985732), CSIS Dept, BITS Pilani, Hyederabad Campus
+**Lecturer**: [Barsha Mitra](http://a.impartus.com/#/profile/1985732), BITS Pilani, Hyderabad Campus
 [![MailBadge](https://img.shields.io/badge/-barsha.mitra@hyderabad.bits--pilani.ac.in-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:barsha.mitra@hyderabad.bits-pilani.ac.in)
 **Date**: 24/Jul/2021
 
 **NOTE THAT THIS PAGE HAS DIAGRAMS THAT ARE BEST VISIBLE IN LIGHT MODE**
 
-## Topics covered
+## Topics Covered
 1. What is a distributed system?
 2. What is time and space complexity?
 
@@ -25,7 +25,7 @@ Quizzes and Assignments will be done online in elearn portal
 1 Comprehensive (All modules) (Theoretical)
 
 
-Collection of indipendent individual entites (Can function on it's own) to solve a given task collectively
+Collection of independent individual entities (Can function on it's own) to solve a given task collectively
 ```mermaid
 graph LR
 A[PM]---G
@@ -85,7 +85,7 @@ Low coupling: Heterogeneous modules and hence more flexibility is gained
 	- Usually do not have a common system clock
 	- Eg, Omega, Butterfly Networks
 2. Multicomputer parallel systems
-	- There are mulitple processors but no direct access to shared memory/address space
+	- There are multiple processors but no direct access to shared memory/address space
 	- There can be more than one nodes, but most likely are not geographically separated
 	- Eg, IBM Blue gene, CM* Connection Machine
 3. Array Processors
@@ -95,22 +95,23 @@ Low coupling: Heterogeneous modules and hence more flexibility is gained
 
 ### UMA (Uniform Memory Access) Model
 1. Direct access to shared memory
-2. Accesss latency: Waiting time to complete an access to any memory location from any processor
+2. Access latency: Waiting time to complete an access to any memory location from any processor
 3. Access latency is same for all processors
 4. Processors remain in close proximity
 5. Connected by an interconnection network
 6. Processors are of the same type
 
 ### Omega Network (An example of UMA)
-2x2 switchiung elements
-data can be sent on any one fof the input wires
+2x2 switching elements
+data can be sent on any one for the input wires
 n-input and n-output network uses
-log<sub>2</sub>(n) stages
-log<sub>2</sub>(n) bits for addressing
+$log_2(n)$ stages
+$log_2(n)$ bits for addressing
 n processors, n memory banks
 
-(n/2)log<sub>2</sub>(n) switching elemts of size 2/2
+$log_2(n)$(n/2)log<sub>2</sub>(n) switching elements of size 2/2
 interconnection function defines how output i of one one stage is connected ot input j of the next stage
 In this example the interconnection function is a left rotation operation on the binary representation of i to get j
 
-
+---
+Tags: [[!DistributedComputingIndex]]

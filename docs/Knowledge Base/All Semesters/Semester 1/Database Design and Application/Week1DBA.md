@@ -3,7 +3,7 @@ Lecturer: Uma Natarajan, Faculty for BITS Pilani WILP
 
 Date: 24/Jul/2021
 
-## Topics covered
+## Topics Covered
 1. Intro to DBMS
 2. Advantages of DBMS
 
