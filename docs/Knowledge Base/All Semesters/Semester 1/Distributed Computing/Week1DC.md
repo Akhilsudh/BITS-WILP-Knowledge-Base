@@ -6,14 +6,15 @@
 **NOTE THAT THIS PAGE HAS DIAGRAMS THAT ARE BEST VISIBLE IN LIGHT MODE**
 
 ## Topics Covered
-1. What is a distributed system?
-2. What is time and space complexity?
+1. What is a flipped mode course?
+2. What is a distributed system?
+3. Motivations for a distributed system
+4. Coupling
+5. Parallel Systems
+6. UMA (Uniform Memory Access) Model
+7. Omega Network (An example of UMA)
 
-C, C++, Java, Python
-
-virtual lab
-
-## What is a flipped mode course?
+### What is a flipped mode course?
 A course where there is content from a course ware and a live lecture
 
 the events 
@@ -24,7 +25,7 @@ Quizzes and Assignments will be done online in elearn portal
 1 Mid Sem (Half of the modules) (Theoretical)
 1 Comprehensive (All modules) (Theoretical)
 
-
+### What is a distributed system?
 Collection of independent individual entities (Can function on it's own) to solve a given task collectively
 ```mermaid
 graph LR
@@ -109,9 +110,9 @@ $log_2(n)$ stages
 $log_2(n)$ bits for addressing
 n processors, n memory banks
 
-$log_2(n)$(n/2)log<sub>2</sub>(n) switching elements of size 2/2
-interconnection function defines how output i of one one stage is connected ot input j of the next stage
-In this example the interconnection function is a left rotation operation on the binary representation of i to get j
+$\frac{n}{2}log_2(n)$ switching elements of size 2/2
+interconnection function defines how output $i$ of one one stage is connected to input $j$ of the next stage
+In this example the interconnection function is a left rotation operation on the binary representation of $i$ to get $j$
 
 ---
 Tags: [[!DistributedComputingIndex]]
