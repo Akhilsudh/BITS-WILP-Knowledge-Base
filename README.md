@@ -1,49 +1,26 @@
-# Foam/Obsidian-mkdocs-template
-[**中文文档**](https://github.com/Jackiexiao/foam-mkdocs-template/blob/master/README-zh.md)
+# BITS-WILP-Knowledge-Base
+Welcome to my BITS WILP Knowledge Base. This is a personal note book for all the notes I take as part of my journey here at BITS. To know more about what a knowledge base is check [this](https://en.wikipedia.org/wiki/Knowledge_base) out.
 
-![foam-mkdocs-template-png](demo-mkdocs.png)
+## So what is the purpose of this? 🤷🏽‍♂️
+My learning method includes taking a lot of notes through a local note taking tool called [Obsidian](https://obsidian.md/). This website simply hosts that vault of Obsidian notes. The purpose of this page is to make the notes taken throughout my coursework accessible to myself and others in the same boat as me. Maybe this can help you too 🤘🏽
+To know more about Obsidian and what it is, you can read about it in my blog article [here](https://justanothergeek.hashnode.dev/obsidian-as-a-second-brain)
 
-* Share your **foam/obsidian/markdown** notes in a simple and intuitive way ! Support [[roamlike link]] 
+## Usage
+### Deploy to Github Pages
+1. Fork this repository 
+2. Add your documents to `docs` , `docs/index.md` is the main page of the website
+3. Open `mkdocs.yml`, modify `site_name` to your website name, this file is the configuration file for the website, visit links below to know more:
+    * [mkdocs-material](https://squidfunk.github.io/mkdocs-material/)
+    * [mkdocs](https://www.mkdocs.org/user-guide/configuration/)
+4. Push to github, 
+5. Go to github setting, open github page, choose `gh-pages` branch, wait a moment, then visit `https://<your-github-username.github.io/<your-repo>`, for example:`https://akhilsudh.github.io/BITS-WILP-Knowledge-Base/`
 
-This template use [mkdocs](https://www.mkdocs.org/user-guide/configuration/), [mkdocs-material](https://squidfunk.github.io/mkdocs-material/), [mkdocs-roamlinks-plugin](https://github.com/Jackiexiao/mkdocs-roamlinks-plugin) and many mkdocs plugins.
+Thnks to `Github Actions`, it is easy to deploy a static page, all you need to do is modify and push your changes and the actions defined in the repo will deploy the page for you in the `gh-pages` branch
 
-
-## Demo
-
-* [github page](https://jackiexiao.github.io/foam-mkdocs-template/)
-* 国内访问[gitee page](https://jackiegeek.gitee.io/foam-mkdocs-template/)
-
-
-## Usage：Deploy to github page
-
-1. fork this repository 
-2. add your documents to `docs` , `docs/index.md` is the main page of the website
-3. open `mkdocs.yml`, modify `site_name` to your website name, this file is the setting of website, visit link below to get more information(for example, you may want to change language to en)
-* [mkdocs-material](https://squidfunk.github.io/mkdocs-material/)
-* [mkdocs](https://www.mkdocs.org/user-guide/configuration/)
-4. push to github, 
-5. go to github setting, open github page, choose `gh-pages` branch, wait a moment, then visit `http://<your-github-username.github.io/<your-repo>`, for example:`jackiexiao.github.io/blog/`
-5. Done! That's all! Have fun!
-
-Thx to `Github Action`, it make deploy a blog so easy, all you need todo is modify and push your file
-
-## Deploy Locally
-
-The simplest way: Enter your local repo directory, make sure your python > 3.6
-```
-pip install mkdocs mkdocs-material mkdocs-roamlinks-plugin
-mkdocs serve 
-```
-Then visit `http://127.0.0.1:8000/`
-
-## Support syntax
-This template will convert roam/obsidian/foam like links to web support links
-
-| origin                  | convert                             |
-| ----------------------- | ----------------------------------- |
-| `[Git Flow](git_flow.md)` | `[Git Flow](../software/git_flow.md)` |
-| `[[Git Flow]]`            | `[Git Flow](../software/git_flow.md)` |
-| `![[image.png]]`           | `![image.png](../image/imag.png)`      |
-| `[[#Heading identifiers]]` | `[Heading identifiers in HTML](#heading-identifiers-in-html)`
-| ` [[Git Flow#Heading]]` | `[Git Flow](../software/git_flow.md#heading)` |
-
+### Deploy Locally
+1. The simplest way: Enter your local repo directory, make sure your python > 3.6
+    ```
+    pip install -r requirements.txt
+    mkdocs serve 
+    ```
+2. Then visit `http://127.0.0.1:8000/`

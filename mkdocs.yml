@@ -32,7 +32,7 @@ markdown_extensions:
   - nl2br # newline-to-break 
   - toc:
       permalink: '#' # heading anchor 
-      slugify: !!python/name:pymdownx.slugs.uslugify # 解决中文标题解析问题
+      slugify: !!python/name:pymdownx.slugs.uslugify
   - admonition
   - codehilite:
       guess_lang: false
