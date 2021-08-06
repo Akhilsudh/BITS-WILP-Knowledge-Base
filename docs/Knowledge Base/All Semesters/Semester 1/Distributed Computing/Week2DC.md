@@ -8,6 +8,7 @@
 
 ## Topics Covered
 **Module 1**
+
 1. Multicomputer parallel systems
 	1. NUMA (Non Uniform Memory Access) Model
 	2. Wraparound mesh interconnection in an MPS
@@ -20,6 +21,7 @@
 	2. Publish/Subscribe
 
 **Module 2**
+
 1. Preliminary understandings
 2. Notations
 3. Space time diagram

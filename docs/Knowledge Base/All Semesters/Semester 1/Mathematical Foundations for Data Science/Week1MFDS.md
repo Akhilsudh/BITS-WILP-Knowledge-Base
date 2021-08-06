@@ -1,5 +1,6 @@
 # Week 1 
-**Lecturer**: 
+**Lecturer**: G Venkiteswaran, Faculty for BITS Pilani
+[![MailBadge](https://img.shields.io/badge/-gvenki@pilani.bits--pilani.ac.in-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:gvenki@pilani.bits-pilani.ac.in)
 **Date**: 25/Jul/2021
 
 ## Topics Covered
@@ -63,3 +64,6 @@ $$C\ is\ the\ product\ array\ with\ c_{ij}\ for\ entites\ and\ have\ size\ n*m, 
 $$c_{ij} = \begin{equation}\sum_{k = 1}^{n}a_{ik}b_{kj}\end{equation}$$
 
 $$where\ j = 1, . . . , m\ and\ k = 1, . . . , p$$
+
+---
+Tags: [[!MathematicalFoundationsIndex]]
