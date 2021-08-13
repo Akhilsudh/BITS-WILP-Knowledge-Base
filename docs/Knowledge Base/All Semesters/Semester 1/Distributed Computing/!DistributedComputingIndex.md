@@ -8,7 +8,7 @@ This is an Index page for all Distributed Computing Content
 - Week 2
 	- Lecture Notes: [[Week2DC]]
 - Week 3
-	- Lecture Notes: [[Week2DC]]
+	- Lecture Notes: [[Week3DC]]
 
 ---
 Tags: [[!Semester1Index]]
