@@ -105,3 +105,6 @@ Create Read Update Delete
 ![[Pasted image 20210731173711.png]]
 
 ## DBMS WORKERS or Users
+
+---
+Tags: [[!DatabaseDesignAndApplicationIndex]]

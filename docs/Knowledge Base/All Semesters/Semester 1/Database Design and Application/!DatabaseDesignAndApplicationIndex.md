@@ -2,10 +2,12 @@
 
 This is an Index page for all Database Design and Application Content
 
-- Week 1 Lecture
-	- [[Week1DBA]]
-- Week 2 Lecture
-	- [[Week2DBA]]
+- Week 1
+	- Lecture Notes: [[Week1DBA]]
+- Week 2
+	- Lecture Notes: [[Week2DBA]]
+- Week 3
+	- Lecture Notes: [[Week3DBA]]
 
 ---
 Tags: [[!Semester1Index]]

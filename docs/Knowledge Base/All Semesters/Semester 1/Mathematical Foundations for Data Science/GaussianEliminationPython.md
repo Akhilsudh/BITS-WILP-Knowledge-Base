@@ -182,13 +182,17 @@ def REF(self, matrix:Matrix):
 
 1. For the first Pivot element:
 
-	$Total\ number\ of\ Multiplications= (n-1)(n-1+1)$
-	$Total\ number\ of\ Additions= (n-1)(n-1+1)$
+$$Total\ number\ of\ Multiplications= (n-1)(n-1+1)$$
+
+$$Total\ number\ of\ Additions= (n-1)(n-1+1)$$
 
 2. Final counts as seen in REF function:
 
-	$Total\ number\ of\ Multiplications = \sum_{k=1}^{n-1} (n-k)(n-k+1) = \mathcal{O}(n^3)$
-	$Total\ number\ of\ Additions = \sum_{k=1}^{n-1} (n-k)(n-k+1) = \mathcal{O}(n^3)$
-	$Total\ number\ of\ Divisions = (n-1) + (n-2) + \dots + 1 = \sum_{k=1}^{n-1}(n-k) = \mathcal{O}(n^2)$
+$$Total\ number\ of\ Multiplications = \sum_{k=1}^{n-1} (n-k)(n-k+1) = \mathcal{O}(n^3)$$
+
+$$Total\ number\ of\ Additions = \sum_{k=1}^{n-1} (n-k)(n-k+1) = \mathcal{O}(n^3)$$
+
+$$Total\ number\ of\ Divisions = (n-1) + (n-2) + \dots + 1 = \sum_{k=1}^{n-1}(n-k) = \mathcal{O}(n^2)$$
+
 ---
 Tags: [[!MathematicalFoundationsIndex]] [[Week2MFDS]]

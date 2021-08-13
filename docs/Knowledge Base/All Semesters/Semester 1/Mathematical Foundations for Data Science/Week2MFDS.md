@@ -13,6 +13,7 @@
 	1. Pitfalls of Gauss Elimination Algorithms
 		1. Division By Zero
 		2. Round-off Errors
+	2. Operations Count for Gaussian Elimination
 5. Ill Conditioned Systems
 	1. Condition Number
 
@@ -124,6 +125,9 @@ Here the coefficient of $x_1$ in the first equation is 0, hence to avoid the abo
 - This problem becomes very apparent when the number of equations become very large. 
 - To avoid this one must use double-precision numbers. Albeit it being slow, the result will be more correct
 
+#### Operations Count for Gaussian Elimination
+The details for the operation counts for several operations done is explained in the page here: [[GaussianEliminationPython#Operations Count]]
+
 ### Ill Conditioned Systems
 Consider the following system of linear equations:
 $x_1 + 2x_2 = 10$ 
@@ -156,9 +160,6 @@ $$\kappa_\infty(A) = 8 * 3.5$$
 
 - Once conditions are calculated, we can say that whenever the **condition number is in the range of 4 to 5 then they are well informed** but if the **condition is around a 100 or so then they are more ill conditioned in nature**. 
 - There is **no clear distinction** between well informed and ill informed system of equations
-
-#### Operations Count for Gaussian Elimination
-The details for the operation counts for several operations done is explained in the page here: [[GaussianEliminationPython#Operations Count]]
 
 ---
 Tags: [[!MathematicalFoundationsIndex]]

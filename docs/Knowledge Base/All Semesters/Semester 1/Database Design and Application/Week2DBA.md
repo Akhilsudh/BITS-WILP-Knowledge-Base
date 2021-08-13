@@ -42,30 +42,34 @@ Time series db (volatile stocks/financial data)
 ##### Domains, Atttributes, Tuples, and Relations
 ![[Pasted image 20210731175120.png]]
 
-#### ER
-![[Pasted image 20210731175446.png]]
-Entity in ER
-![[Pasted image 20210731175517.png]]
-Example of Entity
-![[Pasted image 20210731175611.png]]
+---
 
-Attribute in ER
+#### Entity Relationship Diagram
+![[Pasted image 20210731175446.png]]
+##### Entity in ER
+![[Pasted image 20210731175517.png]]
+##### Example of Entity
+![[Pasted image 20210731175611.png]]
+##### Attributes in ER
 ![[Pasted image 20210731175923.png]]
 
-Simple and composite
-Simple cannot be split, it is atomic
-Composite can be divided into smaller sub parts (It is a combination of simple  attributes ex address)
-single valued
-multivalued
-derived attribute
-stored attributes: attributes from which other attributes can be derived (eg birth date, job join date)
+1. **Simple and composite**:
+	1. Simple cannot be split, it is atomic
+	2. Composite can be divided into smaller sub parts (It is a combination of simple  attributes example address)
+2. **Single valued and multivalued**:
+	1. Single valued means there is only one value for that column (Example name)
+	2. Multivalued means there are more than one value for that column (Example Phone numbers)
+3. **Stored attributes and Derived attribute**: 
+	1. Attributes from which other attributes can be derived is a stored attribute (Example birth date, job join date) This will be stored in the DB
+	2. Derived attribute are attributes that are derived from stored attributes (Example age from birth date, experience from job joining date) This value would not be stored in the DB
+4. **Key Attributes**
+	![[Pasted image 20210731181536.png]]
 
-key -> is either a single or a combination of more attributes to get a key
-![[Pasted image 20210731181536.png]]
-
-foreign key -> 
-
-Table -> Entity Type; Row --> Entity/Tuple: Column --> Domain ; Entity Set --> set of all rows
+##### Relationship between the physical design to the conceptual design
+1. Table -> Entity Type 
+2. Row --> Entity/Tuple
+3. Column --> Domain
+4. Set of all rows --> Entity Set
 
 ##### Drawing attributes
 ![[Pasted image 20210731180930.png]]
@@ -75,4 +79,8 @@ Rollno: key attribute since every STUDENT will have a unique value
 ![[Pasted image 20210731181903.png]]
 ![[Pasted image 20210731182249.png]]
 
-![[Pasted image 20210731182455.png]]
+
+
+
+---
+Tags: [[!DatabaseDesignAndApplicationIndex]]
