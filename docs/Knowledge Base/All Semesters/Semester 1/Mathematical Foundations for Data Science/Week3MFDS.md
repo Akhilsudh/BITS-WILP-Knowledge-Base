@@ -28,7 +28,16 @@ Cholesky's Method $U = L^T$ when A is symmetric and positive definite
 
 ![[Pasted image 20210808115605.png]]
 
-## Iterative method examples
+## Iterative methods
+### Gauss Jacobi
+1. Computations for each element can be done in parallel since each step independent
+3. Convergence is generally faster than Jacobi method
+
+
+### Gauss Seidel
+1. The gauss seidel method can be applied to any matrix with non zero elements on diagonal, but convergence is not guaranteed
+2. Computations for each element cannot be done in parallel since each step depends on the previous calculation
+3. Convergence is generally faster than Jacobi method
 
 ![[Pasted image 20210808115631.png]]
 

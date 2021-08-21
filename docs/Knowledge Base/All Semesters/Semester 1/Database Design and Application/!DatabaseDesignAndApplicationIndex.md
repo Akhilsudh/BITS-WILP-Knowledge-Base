@@ -8,6 +8,8 @@ This is an Index page for all Database Design and Application Content
 	- Lecture Notes: [[Week2DBA]]
 - Week 3
 	- Lecture Notes: [[Week3DBA]]
+- Week 5
+	- Lecture Notes: [[Week5DBA]]
 
 ---
 Tags: [[!Semester1Index]]
