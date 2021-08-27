@@ -10,6 +10,8 @@ This is an Index page for all Mathematical Foundations for Data Science Content
 	- Gaussian Elimination Code and Analysis in Python: [[GaussianEliminationPython]]
 - Week 3
 	- Lecture Notes: [[Week3MFDS]]
+- Week 4
+	- Lecture Notes: [[Week4MFDS]]
 
 ---
 Tags: [[!Semester1Index]]
