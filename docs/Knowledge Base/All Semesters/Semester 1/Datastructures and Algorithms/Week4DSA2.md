@@ -36,7 +36,7 @@
 ## Little$\mathcal{o}$ and ## Little$\omega$
 No matter what value of $c \gt 0$ we choose, we need to see if $g(n) \ge f(n)$. For example for a functions $12n^2 + 6n$, the little$\mathcal{o}$ is $\mathcal{o}(n^3)$.
 
-if $f(n$) is $\mathcal{o}(g(n)$ then $g(n)$ is $\omega(f(n))$
+if $f(n)$ is $\mathcal{o}(g(n)$ then $g(n)$ is $\omega(f(n))$
 
 
 ## Bubble Sort
