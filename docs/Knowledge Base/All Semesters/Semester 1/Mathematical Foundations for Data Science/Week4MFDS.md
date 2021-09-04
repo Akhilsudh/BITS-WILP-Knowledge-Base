@@ -22,6 +22,11 @@ Axioms:
 ![[Pasted image 20210822114155.png]]
 ![[Pasted image 20210822114553.png]]
 
+S_1 = {1rs Note, 5rs Note}
+Here S is not independent since 5 1rs notes can become 5rs
+S_2 = {Coffee powder, Water, Milk, Sugar}
+Here S is linearly independent
+
 ## Basis and Dimension
 ![[Pasted image 20210822115722.png]]
 

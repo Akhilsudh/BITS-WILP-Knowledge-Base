@@ -11,8 +11,9 @@ This is an Index page for all Distributed Computing Content
 	- Lecture Notes: [[Week3DC]]
 - Week 4
 	- Lecture Notes: [[Week4DC]]
+	- Lecture Notes: [[Week4DC2]]
 - Week 5
-	- Lecture Notes: [[Week5DC]]
+	- Lecture Notes: [[Week5DC]] 
 
 ---
 Tags: [[!Semester1Index]]
