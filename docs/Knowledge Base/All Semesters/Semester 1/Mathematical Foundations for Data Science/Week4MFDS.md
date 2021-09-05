@@ -5,6 +5,10 @@
 
 ## Topics Covered
 1. Field
+2. Vector Space
+3. Inner Product
+4. Linear Dependence and Independence of Vectors
+5. Basis and Dimension
 
 ## Field
 Axioms

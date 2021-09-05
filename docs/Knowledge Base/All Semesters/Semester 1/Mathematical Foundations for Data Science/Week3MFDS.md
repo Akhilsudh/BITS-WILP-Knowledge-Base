@@ -4,7 +4,11 @@
 **Date**: 08/Aug/2021
 
 ## Topics Covered
-
+1. Gauss Elimination Analysis (cont.)
+	1. Corollary
+2. Iterative methods
+	1. Gauss Jacobi
+	2. Gauss Seidel
 
 ## Gauss Elimination Analysis (cont.)
 

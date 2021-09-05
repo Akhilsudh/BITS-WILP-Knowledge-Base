@@ -9,9 +9,9 @@
 	2. Algorithm
 		1. Merge Function
 		2. Sort Function
-		3. Algorithm Analysis
-			1. Space Complexity
-			2. Time Complexity
+	3. Algorithm Analysis
+		1. Space Complexity
+		2. Time Complexity
 
 ## Merge Sort
 Merge Sort is not an in-place sort like the other three that was explained above
@@ -74,14 +74,14 @@ sort(S):
 	return R
 ```
 
-#### Algorithm Analysis
-##### Space Complexity
+### Algorithm Analysis
+#### Space Complexity
 The recursive tree for a random input array would look something like this:
 ![[Pasted image 20210904094158.png]]
 From the above image you can see that the number of memory blocks from the root to the leaf node of the recursive tree is at max $n$, so:
 **Space Complexity:** $\mathcal{O}(n)$
 
-##### Time Complexity
+#### Time Complexity
 ![[Pasted image 20210904095735.png]]
 At every level, we do a total effort of merging in the order of $\mathcal{O}(n)$
 The total height of the recursive tree is  given by the order of $\mathcal{O}(log\ n)$
