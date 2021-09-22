@@ -8,6 +8,7 @@ This is an Index page for all Distributed Computing Content
 - Week 2
 	- Lecture Notes: [[Week2DC]]
 - Week 3
+	- Pre Reading: [[PreReadingWeek3DC]]
 	- Lecture Notes: [[Week3DC]]
 - Week 4
 	- Lecture Notes: [[Week4DC]]
@@ -18,6 +19,10 @@ This is an Index page for all Distributed Computing Content
 	- Lecture Notes: [[Week6DC]] 
 - Week 7
 	- Pre Reading: [[PreReadingWeek7DC]]
+	- Lecture Notes: [[Week7DC]]
+
+
+- Note Summary: [[EmbeddedNotesDC]]
 
 ---
 Tags: [[!Semester1Index]]

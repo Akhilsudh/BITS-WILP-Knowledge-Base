@@ -37,7 +37,7 @@ partition(arr, low, high)
 	pivot = arr[high]
 	i = (low - 1)
 	for(j = low; j <= high - 1; j++) then
-		if arr[i] < pivot then
+		if arr[j] < pivot then
 			i++
 			arr[i] <-> arr[j]
 	arr[i + 1] <-> arr[high]

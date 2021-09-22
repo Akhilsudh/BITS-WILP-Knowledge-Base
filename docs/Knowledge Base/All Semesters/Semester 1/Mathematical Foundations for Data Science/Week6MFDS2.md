@@ -92,11 +92,5 @@ Go through the excel sheet
 ![[Pasted image 20210907095621.png]]
 
 
-
-
-
-$\over{2, 3}$
-
-
 ---
 Tags: [[!MathematicalFoundationsIndex]]

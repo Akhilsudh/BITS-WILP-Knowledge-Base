@@ -16,7 +16,14 @@ This is an Index page for all Mathematical Foundations for Data Science Content
 	- Lecture Notes: [[Week5MFDS]]
 - Week 6
 	- Lecture Notes: [[Week6MFDS]]
+	- Lecture Notes: [[Week6MFDS2]]
+- Week 7
+	- Lecture Notes: [[Week7MFDS]]
+- Week 8
+	- Lecture Notes: [[Week8MFDS]]
+	- Lecture Notes: [[Week8MFDS2]]
 
+- Note Summary: [[EmbeddedNotesMFDS]]
 
 ---
 Tags: [[!Semester1Index]]

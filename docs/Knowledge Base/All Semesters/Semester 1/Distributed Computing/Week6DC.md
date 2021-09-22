@@ -73,7 +73,7 @@ $\forall\ j$ if $RD_i[j] = 1$, then $S_i$ sends a REPLY message to $S_j$ and set
 	- M1: $\forall i \forall j, i \ne j, q \le i, j \le N :: R_i \cap R_j \ne \phi$
 	- M2: $\forall i : 1 \le i \le N :: S_i \in R_i$
 	- M3: $\forall i : 1 \le i \le N :: |R_i| = K$ for some $K$
-	- M4: Any site S_j is contained in K number of R_i's, $1 \le i$ , j$ \le N$
+	- M4: Any site S_j is contained in K number of R_i's, $1 \le i$ , $j \le N$
 - Maekawa showed that $N = K(K - 1) + 1$
 - This relation gives $|R_j| = K = \sqrt(N)$
 - Uses $REQUEST$, $REPLY$ and $RELEASE$ messages
