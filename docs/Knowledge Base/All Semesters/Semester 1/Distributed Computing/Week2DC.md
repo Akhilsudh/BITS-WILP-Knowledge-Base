@@ -93,7 +93,7 @@ $$Parallel\ Program\ Concurrency = \frac{number\ of\ local\ operations}{total\ n
 
 ### Distributed Communication Models
 #### RPC (Remote Procedure Call)
-This topic is covered in a pre reading session here: [[PreReadingWeek1DC#RPC Remote Procedure Call]]
+This topic is covered in a pre reading session here: [[PreRecordedModule12#RPC Remote Procedure Call]]
 ![[Pasted image 20210731153959.png]]
 - The client procedure calls a client stub to pass params
 - The client marshals the params (makes a common representation of the params), builds the message, and calls the local OS
@@ -133,7 +133,7 @@ This topic is covered in a pre reading session here: [[PreReadingWeek1DC#RPC Rem
 	- States of the processes: Local memory state
 	- States of the communication channels: set of messages in transit
  
- 	Global state is explained in detail here [[PreReadingWeek1DC#Global state of a DS]]
+ 	Global state is explained in detail here [[PreRecordedModule12#Global state of a DS]]
 - Occurrences of events $e$
 	- Causes changes in respective processes states
 	- Causes changes in channels states

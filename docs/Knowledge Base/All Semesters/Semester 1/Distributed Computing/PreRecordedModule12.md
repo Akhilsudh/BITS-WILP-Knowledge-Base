@@ -1,8 +1,6 @@
-# Pre Reading for Week 1
-**NOTE THAT THIS PAGE HAS DIAGRAMS THAT ARE BEST VISIBLE IN LIGHT MODE**
-## Module 1
-### Session 1
-#### Relation between software components
+# Module 1
+## Session 1
+### Relation between software components
 ![[DisctributedComputingImage.png]]
 The middleware and the distributed application abstracts the fact that the application is being run by multiple computers to the user.
 
@@ -11,8 +9,8 @@ Some popular examples of Distributed computing:
 2. Internet of Things: A network of several entities (ranging from small sensors to full fledged PCs) connected over a network so that an application can make sense of this data as a whole
 3. Cloud computing is also a distributed computing paradigm.
 
-### Session 2
-#### Multiprocessor Vs Multi-computer systems
+## Session 2
+### Multiprocessor Vs Multi-computer systems
 ![[Pasted image 20210729212239.png]]
 
 ##### Multiprocessor
@@ -24,11 +22,11 @@ Some popular examples of Distributed computing:
 - The multiple processors can connect to a particular memory bank when a particular switch is clicked on in the case of **cross point switch**, this method is not feasible since the number of cross connection can be limiting for very large configurations of CPU and memory banks
 - In case of an **omega switching network**, each omega switch is arranged in stages and the layers allow for lesser switches to pair the CPUs to the memory banks
 - In both of the above cases the s
-##### Multi-computer
+#### Multi-computer
 - Multiple computers are connected over a high speed connection network, where the latency involved in this communication depends on the type of distributed computing designed (Varies from cluster computing, grid computing, IOT, or a common consumer computers connected together across the interweb)
 - Unlike multiprocessor systems, the computers themselves do not need switching networks as explained above but can be connected over networks (LAN, WAN, MAN)
 
-#### Pros and Cons of Distributed systems
+### Pros and Cons of Distributed systems
 - **Pros**
 	1. Communication and resource sharing possible
 	2. Price to performance ratio is better
@@ -39,15 +37,15 @@ Some popular examples of Distributed computing:
 	2. High speed reliable network connectivity is essential (Like GARUDA Grid)
 	3. Security and privacy (Similar to networking, the risks of getting hacked affects distributed computers as well)
 
-#### Design issues
-##### Scaling
+### Design issues
+#### Scaling
 1. If possible use asynchronous communication, since more the synchronous communication the worse it scales (Only if possible)
 2. One can also move parts of computation(To the client) in order to reduce latency from the server side
 	![[Pasted image 20210729214431.png]]
 	Here you see that the form checking is done on the client side which will make the form processing part of the server more scalable.
 3. DNS is a good example for distributed query processing where a whole URL
 
-##### Other design issues
+#### Other design issues
 1. Lack of global knowledge 
 2. Naming (Name resolutions done by DNS is a challenging task)
 3. Compatibility (When multiple resources are used together all must be compatible)
@@ -55,8 +53,8 @@ Some popular examples of Distributed computing:
 5. Resource management (Hard to arbiterate tasks)
 6. Security
 
-### Session 3
-#### RPC (Remote Procedure Call)
+## Session 3
+### RPC (Remote Procedure Call)
 1. Issues:
 	1. Identifying and accessing the remote procedure
 	2. Parameters required to run the procedure
@@ -114,15 +112,15 @@ Now we need to write the server side logic to process the remote call:
 ![[Pasted image 20210729223817.png]]
 Here we define the remote function that needs to be run based on the conventions put on by sun microsystems
 
-## Module 2
-### Session 1
-#### What is a distributed program?
+# Module 2
+## Session 1
+### What is a distributed program?
 - A program that consists of a set of n **asynchronous processes**.
 - These processes **do not share a global memory** and use only **message passing APIs** for coms.
 - These process **do not share a global clock** that is accessible at the same time. The process 
 - These process executions and message transfers are **asynchronous**.
 
-#### Model of distributed executions
+### Model of distributed executions
 Given 3 processes $p1$, $p2$ and $p3$, we represent them in a space-time diagram where Time is in x and space is in y axis. 
 ![[Pasted image 20210730220659.png]]
 
@@ -144,7 +142,7 @@ Here we see the relationships between the events for each process
 - A Message receive event is an event in a process which asynchronously receives a message from another process
 - The diagram above shows us causal-effect relationships between events across different processes that gives us an idea on how to design a distributed system
 
-#### Models of communication networks
+### Models of communication networks
 There are namely 3:
 1. FIFO
 2. Non FIFO
@@ -164,7 +162,7 @@ P3--c4-->P1
 - If $P3$ sends four messages $m1$, $m2$, $m3$ and $m4$ through the channel $c4$, then if $c4$ was a Non FIFO channel then $P1$ would receive the messages in random order. This is useful if the algorithms in place can handle receiving messages in random order.
 - If a channel follows causal order, then we do not need to check if a message was sent in a particular order or not, since for every message sent there is a receipt even in a process and the ordering is maintained by the receiving end of the process.
 
-#### Global state of a DS
+### Global state of a DS
 - A local state of a process is the current execution state at which a particular process is in.
 - A Global state of a DS is a collection of such above mentioned local states of processes and channels
 - The global state $GS$ is defined as:
@@ -176,19 +174,19 @@ P3--c4-->P1
 - The only way that is possible is when all the processes are synchronous in nature or if there were a global, instantaneously accessible clock (Both of which are impossible in a typical DS)
 - To calculate the $GS$ there exists multiple algorithms to calculate the same
 
-#### Consistent global state
+### Consistent global state
 ![[Pasted image 20210730224519.png]]
 - In the above diagram if we were to calculate the $GS_1$ at the red line drawn, we can say that the $GS_1$ is the sum of $LS_1$, $LS_2$, $LS_3$ and $LS_4$. Here the $GS$ is strongly consistent since there are no send or receive messages crossing in that slice of time.
 - In the same diagram $GS_2$ is the sum of $LS_5$, $LS_6$, $LS_7$ and $LS_8$. Here the $GS$ does have a record of the message sent by $e_1^4$ but not the state of the message being received by $e_3^5$, hence the $GS$ although consistent enough to use it for calculating typical things such as deadlocks etc but just not strongly consistent.
 - An $GS$ is said to be inconsistent if the local states were calculated in a way where the message receive event is considered but the corresponding message sent is missed. This makes the $GS$ is rendered useless.
 
-### Session 2
-#### Logical Clocks
+## Session 2
+### Logical Clocks
 Lamport Logical Clocks (Scalar Time)
 - Causality among events in a DS is a way of analyzing processes and infer details regarding the computation.
 - The knowledge of causal precedence relation among several events of different processes helps solve a variety of problems in a DS.
 
-##### Scalar Time
+#### Scalar Time
 - In a scalar time clock, we condense the process, its local view of the global time into a single variable called $C_i$.
 - With the above assumption there exists 2 rules to update the internal clock:
 	1. **Rule 1**: Before executing an event, process $p_i$ executes the clock value to be as: 

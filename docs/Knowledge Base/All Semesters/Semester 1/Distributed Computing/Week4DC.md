@@ -37,9 +37,13 @@
 
 ## Snapshot Recording Algorithms
 ### Chandy Lamport Algorithm (For FIFO)
+This algo uses marker messages to show other processes that it has recorded its state and notify others that they must record theirs too
+
+**Marker Sending Rule**
 Process $p_i$ records its state
 For each outgoing channel $C$ on which a marker has not been sent, $p_j$ sends a marker along $C$ before $p_i$ sends further messages along $C$
 
+**Marker Receiving Rule**
 On receiving a marker along channel $C$:
 if $p_j$ has not recorded its state then
 Record the state of $C$ as empty set
@@ -72,6 +76,9 @@ Let $S1$ sends a marker to $S2$ through $C_{12}$ , so
 ![[Pasted image 20210821162034.png]]
 
 ![[Pasted image 20210821162250.png]]
+
+![[Pasted image 20210924172200.png]]
+
 $LS = 750$
 All subsequent messages are red messages
 $P2$ turns red when 10 is received, $P2$ will record the $LS$ as 190

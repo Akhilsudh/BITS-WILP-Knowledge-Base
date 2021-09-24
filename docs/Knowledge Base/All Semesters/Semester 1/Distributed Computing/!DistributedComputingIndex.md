@@ -3,12 +3,12 @@
 This is an Index page for all Distributed Computing Content
 
 - Week 1
-	- Pre Reading: [[PreReadingWeek1DC]]
+	- Pre Reading: [[PreRecordedModule12]]
 	- Lecture Notes: [[Week1DC]]
 - Week 2
 	- Lecture Notes: [[Week2DC]]
 - Week 3
-	- Pre Reading: [[PreReadingWeek3DC]]
+	- Pre Reading: [[PreRecordedModule3]]
 	- Lecture Notes: [[Week3DC]]
 - Week 4
 	- Lecture Notes: [[Week4DC]]
@@ -18,7 +18,7 @@ This is an Index page for all Distributed Computing Content
 - Week 6
 	- Lecture Notes: [[Week6DC]] 
 - Week 7
-	- Pre Reading: [[PreReadingWeek7DC]]
+	- Pre Reading: [[PreRecordedModule6]]
 	- Lecture Notes: [[Week7DC]]
 
 

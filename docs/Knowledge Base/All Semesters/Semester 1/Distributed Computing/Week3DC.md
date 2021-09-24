@@ -87,7 +87,7 @@ More details here [[Week2DC#Notations]].
 
 ### Scalar Time
 #### Notations
-- This is covered in the pre reading content here: [[PreReadingWeek1DC#Scalar Time]]
+- This is covered in the pre reading content here: [[PreRecordedModule12#Scalar Time]]
 - Time domain is the set of non negative integers
 - $C_i$ : Integer variable, denotes the logical clock of $p_i$
 

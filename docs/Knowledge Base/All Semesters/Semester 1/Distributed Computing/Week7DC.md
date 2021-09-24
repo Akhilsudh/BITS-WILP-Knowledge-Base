@@ -18,7 +18,7 @@
 	4. 
 
 ## Deadlock Introduction
-- Deadlocks are explained in details here [[PreReadingWeek7DC#What is a deadlock]]
+- Deadlocks are explained in details here [[PreRecordedModule6#What is a deadlock]]
 - A process may request resources in any order
 - Request order may not be known apriori
 - A process can request a resource while holding others
@@ -48,24 +48,24 @@
 - A system is deadlocked if and only if there exists a directed cycle or knot in the WFG
 
 ## Knot
-More info here [[PreReadingWeek7DC#Cycle Vs Knot]]
+More info here [[PreRecordedModule6#Cycle Vs Knot]]
 ![[Pasted image 20210911150057.png]]
 
 ## AND Model
-More details inn [[PreReadingWeek7DC#Cycle Vs Knot]]
+More details inn [[PreRecordedModule6#Cycle Vs Knot]]
 ![[Pasted image 20210911151837.png]]
 
 In an AND graph a cycle is a sufficient condition to determine a deadlock
 
 ## OR Model
-More details in [[PreReadingWeek7DC#OR WFGs]] and [[PreReadingWeek7DC#Cycle Vs Knot]]
+More details in [[PreRecordedModule6#OR WFGs]] and [[PreRecordedModule6#Cycle Vs Knot]]
 ![[Pasted image 20210911152745.png]]
 
 In an OR graph, a cycle is not a sufficient condition to determine a deadlock, we also need a  knot
 In the above diagram you can see that P_11 can satisfy its need by taking the resource used by P_33 and can change from Waiting to Active state.
 
 ## Chandy Misra Haas Algorithm for the AND model
-Explained in detail here [[PreReadingWeek7DC#Chandy-Misra-Haas CMH Edge-Chasing for AND Graphs]]
+Explained in detail here [[PreRecordedModule6#Chandy-Misra-Haas CMH Edge-Chasing for AND Graphs]]
 - Uses a special message called probe
 	- Probe is a triplet $(i, j, k)$
 	- Denotes that

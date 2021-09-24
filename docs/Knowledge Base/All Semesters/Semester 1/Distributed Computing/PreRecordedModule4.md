@@ -1,8 +1,5 @@
-# Pre Reading for Week 4
-**NOTE THAT THIS PAGE HAS DIAGRAMS THAT ARE BEST VISIBLE IN LIGHT MODE**
-
-## Module 4
-### Birman Schiper Stephenson BSS Protocol
+# Module 4
+## Birman Schiper Stephenson BSS Protocol
 - This algorithm works with broadcasting messages
 - Before broadcasting $m$, process $P_i$ increments vector time $VT_{pi}[i]$ and timestamps $m$
 - Other processes receives this $VT_m$ from $P_i$
@@ -11,7 +8,7 @@
 	- $VT_{Pj}[k] >= VT_m[k]$ for every $k \in \{1, 2, ... n\} = \{i\}$, meaning $P_j$ received all messages also received by $P_i$ before sending message $m$.
 - When $P_j$ delivers $m$, $VT_{Pj}$ updated by IR2 of Vector clock
 
-#### Example 1
+### Example 1
 ![[Pasted image 20210916225719.png]]
 - $P_2$ receives $m_2$ first with a $VT = (2, 0)$
 	- At $P_2$ the $VT = (0, 0)$ and $(0, 0) \ne (2, 0) - (1, 0)$
@@ -22,7 +19,7 @@
 	- Since the rule is satisfied, $m_1$ is received, and $VT_2$ is updated to $(1, 0)$
 - $P_2$ now checks condition for the message $m_2$ in queue. Now since the $VT$ at $P_2$ is $(1, 0)$, the two rules are satisfied, and the message $m_2$ is now received. and the $VT$ is updated to $max(VT_2, VT_1) = (2, 0)$
 
-#### Example 2
+### Example 2
 ![[Pasted image 20210916230830.png]]
 - $P_1$ sends message to $P_2$ and $P_3$ with $VT_1 = (1, 0, 0)$
 - $P_2$ has $VT_2 = (0, 0, 0)$
@@ -61,7 +58,7 @@
 		- This VT also satisfies the second one as well
 		- This message is marked as received and $VT_1$ is updated to $(2, 1, 0)$
 
-### Schiper-Eggli-Sandoz SES protocol
+## Schiper-Eggli-Sandoz SES protocol
 - There is no need for broadcast messages
 - Each process maintains a vector $V_P$ of size $N - 1$, $N$ being the number of processes in the system
 - $V_P$ is a vector of tuple $(P' , t)$: $P'$ is the destination process id and $t$ is the vector timestamp
@@ -71,7 +68,7 @@
 
 ![[Pasted image 20210916233533.png]]
 
-#### Example 1
+### Example 1
 ![[Pasted image 20210917011333.png]]
 - $P_1$ sends $m_1$ with $(1, 0)\{\}$ to $P_2$
 	- $VP_1 = \{(P_2, 10)\}$
@@ -85,7 +82,7 @@
 - The buffered message is now considered for receiving
 	- Since the tuple has $t_m = (1, 0)$, the $T_2$ becomes $(2, 1)$ after IR2 and then $(2, 2)$ after IR1
 
-#### Example 2
+### Example 2
 ![[Pasted image 20210918001535.png]]
 - $P_1$ sends $m_{13}$ with $(1, 0, 0)\{\}$
 - $P_1$ sends $m_{12}$ with $(2, 0, 0)\{(P_3, 100)\}$
