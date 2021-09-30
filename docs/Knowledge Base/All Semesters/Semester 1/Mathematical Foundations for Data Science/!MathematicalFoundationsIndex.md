@@ -2,6 +2,10 @@
 
 This is an Index page for all Mathematical Foundations for Data Science Content
 
+### Assignment
+- Assignment 1 [[Assignment1]]
+
+### Course Content
 - Octave Cheat Sheet: [[OctaveCheatSheet]]
 - Week 1
 	- Lecture Notes: [[Week1MFDS]]
@@ -22,6 +26,7 @@ This is an Index page for all Mathematical Foundations for Data Science Content
 - Week 8
 	- Lecture Notes: [[Week8MFDS]]
 	- Lecture Notes: [[Week8MFDS2]]
+
 
 - Note Summary: [[EmbeddedNotesMFDS]]
 
