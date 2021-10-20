@@ -4,6 +4,11 @@
 **Date**: 18/Sep/2021
 
 ## Topics Covered
+1. Solving Recurrence Relations
+	1. Methods of solving recurrence relations
+		1. Substitution Method
+		2. Recurrence Tree Method
+		3. Masters Theorem
 
 ## Solving Recurrence Relations
 Taking the example of binary search, we can see that the function intially takes in n inputs adn then does constant operations for checking the validity of the iteration and to calculate the mid element. Once this is done the array is divided by two again and the same happens again. This would look like:
