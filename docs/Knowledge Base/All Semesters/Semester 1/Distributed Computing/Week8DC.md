@@ -1,4 +1,4 @@
- Week 8
+# Week 8
 
 **Lecturer**: [Barsha Mitra](http://a.impartus.com/#/profile/1985732), BITS Pilani, Hyderabad Campus
 [![MailBadge](https://img.shields.io/badge/-barsha.mitra@hyderabad.bits--pilani.ac.in-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:barsha.mitra@hyderabad.bits-pilani.ac.in)
@@ -121,7 +121,7 @@ Since $B$ received all replies and $num_B = 0$ the node B declares deadlock
 	- If non-faulty processes broadcast different initial values, then these processes should decide upon a common value
 - **Termination:** Each non-faulty process must eventually decide on a value
 
-## INteractive Consistency Problem
+## Interactive Consistency Problem
 - Initiated by all processes
 - **Agreement:** All non faulty processes must agree on the same array of values
 - **Validity:**

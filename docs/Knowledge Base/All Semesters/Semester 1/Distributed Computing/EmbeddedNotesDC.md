@@ -6,6 +6,7 @@
 ![[PreRecordedModule4]]
 ![[PreRecordedModule5]]
 ![[PreRecordedModule6]]
+![[PreRecordedModule7]]
 
 # Live Lecture Notes
 ![[Week1DC]]
