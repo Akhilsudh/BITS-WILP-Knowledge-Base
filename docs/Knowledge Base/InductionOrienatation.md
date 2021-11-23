@@ -16,16 +16,16 @@ Apart from the above services, students also have access to Experimental Learnin
 ## General Orientation
 ### Grading Procedure
 1. Students are graded with relative grading
-2. Letter grades Range from A, A-, B, B-, C, C-, D and E where each letter corresponds to grade points 10, 9, 8, 7, 6, 5, 4 and 2 respectively
-3. For project work a non-letter grade is awarded such as EXCELLENT, GOOD, FAIR and POOR.
+2. Letter grades Range from $A$, $A-$, $B$, $B-$, $C$, $C-$, $D$ and $E$ where each letter corresponds to grade points $10$, $9$, $8$, $7$, $6$, $5$, $4$ and $2$ respectively
+3. For project work a non-letter grade is awarded such as $EXCELLENT$, $GOOD$, $FAIR$ and $POOR$.
 4. If a student is absent for any of the written examination, the student will be declared as a RRA (Required to Register Again) for that course.
-5. The CGPA awarded in a 10 point scale is calculated as:
+5. The CGPA awarded in a $10$ point scale is calculated as:
 
 	$$
 	CGPA = {(U_1G_1 + U_2G_2 + U_3G_3 + U_4G_4)\over(U1 + U2 + U3 + U4)}
   $$
 
-	Where U<sub>1</sub>, U<sub>2</sub>, U<sub>3</sub> and U<sub>4</sub> denote the Units associated with the courses taken G<sub>1</sub>, G<sub>2</sub>, G<sub>3</sub> and G<sub>4</sub> denote the Grade Points awarded in the respective courses.
+	Where $U_1$, $U_2$, $U_3$ and $U_4$ denote the Units associated with the courses taken $G_1$, $G_2$, $G_3$ and $G_4$ denote the Grade Points awarded in the respective courses.
 
 6. Non Letter Grades DO NOT go into CGPA Computation
 

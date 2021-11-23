@@ -1,7 +1,10 @@
 # Distributed Computing Index
 
 This is an Index page for all Distributed Computing Content
+### Assignment
+- Assignment [[MFDSAssignment1]]
 
+### Course Content
 - Week 1
 	- Pre Reading: [[PreRecordedModule12]]
 	- Lecture Notes: [[Week1DC]]
