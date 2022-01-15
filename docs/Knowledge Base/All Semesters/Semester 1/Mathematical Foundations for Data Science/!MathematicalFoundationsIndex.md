@@ -8,7 +8,7 @@ This is an Index page for all Mathematical Foundations for Data Science Content.
 - Assignment 2 [[MFDSAssignment2]]
 
 ### Course Content
-#### Part 1
+#### Part 1 (Matrices / Vectors / Linear Programming)
 - Octave Cheat Sheet: [[OctaveCheatSheet]]
 - Week 1
 	- Lecture Notes: [[Week1MFDS]]
@@ -30,8 +30,8 @@ This is an Index page for all Mathematical Foundations for Data Science Content.
 	- Lecture Notes: [[Week8MFDS]]
 	- Lecture Notes: [[Week8MFDS2]]
 
-#### Part 2
-Part 2 of this subject was problem heavy, so notes are captured in the following pdf. Problems are not completely solved since this is only the notes captured during the live lecture itself.
+#### Part 2 (Calculus / Induction / Counting)
+Part 2 of this subject was problem heavy, so notes are captured in the [following pdf](https://github.com/Akhilsudh/BITS-WILP-Knowledge-Base/blob/master/docs/Knowledge%20Base/Assets/PDFs/MathNotes.pdf). Problems are not completely solved since this is only the notes captured during the live lecture itself.
 
 - Note Summary: [[EmbeddedNotesMFDS]]
 
