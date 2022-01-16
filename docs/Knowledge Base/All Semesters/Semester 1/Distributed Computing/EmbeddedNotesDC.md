@@ -7,6 +7,7 @@
 ![[PreRecordedModule5]]
 ![[PreRecordedModule6]]
 ![[PreRecordedModule7]]
+![[PreRecordedModule8]]
 
 # Live Lecture Notes
 ![[Week1DC]]
@@ -18,3 +19,5 @@
 ![[Week6DC]]
 ![[Week7DC]]
 ![[Week8DC]]
+![[Week9DC]]
+![[Week10DC]]

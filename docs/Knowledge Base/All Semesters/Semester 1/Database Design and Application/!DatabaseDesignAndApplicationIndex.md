@@ -16,6 +16,12 @@ This is an Index page for all Database Design and Application Content
 	- Lecture Notes: [[Week7DBA]]
 - Week 8
 	- Lecture Notes: [[Week8DBA]]
+- Week 9
+	- Lecture Notes: [[Week9DBA]]
+- Week 10
+	- Lecture Notes: [[Week10DBA]]
+- Week 11
+	- Lecture Notes: [[Week11DBA]]
 
 
 - Note Summary: [[EmbeddedNotesDBA]]

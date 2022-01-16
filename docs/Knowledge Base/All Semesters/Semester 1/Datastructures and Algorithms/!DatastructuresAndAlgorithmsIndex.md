@@ -19,6 +19,12 @@ This is an Index page for all Distributed Computing Content
 	- Lecture Notes: [[Week7DSA]]
 - Week 8
 	- Lecture Notes: [[Week8DSA]]
+	- Lecture Notes: [[Week9DSA]]
+- Week 9
+	- Lecture Notes: [[Week11DSA]]
+
+- Week 10
+	- Lecture Notes: [[Week12DSA3]]
 
 - Note Summary: [[EmbeddedNotesDSA]]
 

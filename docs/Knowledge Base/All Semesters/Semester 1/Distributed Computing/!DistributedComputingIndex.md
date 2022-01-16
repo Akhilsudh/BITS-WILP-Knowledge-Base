@@ -2,7 +2,7 @@
 
 This is an Index page for all Distributed Computing Content
 ### Assignment
-- Assignment [[MFDSAssignment1]]
+- Assignment [[DCAssignment]]
 
 ### Course Content
 - Week 1
@@ -23,6 +23,14 @@ This is an Index page for all Distributed Computing Content
 - Week 7
 	- Pre Reading: [[PreRecordedModule6]]
 	- Lecture Notes: [[Week7DC]]
+- Week 8
+	- Pre Reading: [[PreRecordedModule7]]
+	- Lecture Notes: [[Week8DC]]
+- Week 9
+	- Pre Reading: [[PreRecordedModule8]]
+	- Lecture Notes: [[Week9DC]]
+- Week 10
+	- Lecture Notes: [[Week10DC]]
 
 
 - Note Summary: [[EmbeddedNotesDC]]
