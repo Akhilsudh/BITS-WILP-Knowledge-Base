@@ -5,11 +5,12 @@ The BITS WILP (Work Integrated earning Program) is exclusively meant for the wor
 ## Platforms and services for accessing content
 The BITS Work Integrated Learning Program has the following services for access to content from emails, to courses and other resources
 
-| Service               | URL                                   | What it is for                                                                |
-| --------------------- | ------------------------------------- | ----------------------------------------------------------------------------- |
-| Impartus              | http://a.impartus.com/login/#/        | Platform to join and watch live lectures that are conducted                   |
-| ELearn Portal         | https://elearn.bits-pilani.ac.in/     | Single platform for Taxila courses, Old Materials and important announcements |
-| Email                 | <admission_id>@wilp.bits-pilani.ac.in | All Institution Communications                                                |
+| Service       | URL                                   | What it is for                                                                |
+| ------------- | ------------------------------------- | ----------------------------------------------------------------------------- |
+| Impartus      | http://a.impartus.com/login/#/        | Platform to join and watch live lectures that are conducted                   |
+| ELearn Portal | https://elearn.bits-pilani.ac.in/     | Single platform for Taxila courses, Old Materials and important announcements |
+| Email         | <admission_id>@wilp.bits-pilani.ac.in | All Institution Communications                                                |
+| Lab Platform  | http://bitscsis.vlabs.platifi.com     | Lab platform for running lab modules                                          | 
 
 Apart from the above services, students also have access to Experimental Learning through Virtual Labs and Remote Labs. Students also have access to an eLibrary where one have access to academic publications (Through Open VPN)
 
