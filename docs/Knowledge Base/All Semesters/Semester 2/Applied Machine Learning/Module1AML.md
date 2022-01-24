@@ -79,8 +79,29 @@ Unsupervised learning helps in getting to know not so obvious attributes that ca
 - In case of changing data sets we use online/incremental learning
 
 ![[Pasted image 20220116125858.png]]
-- Instance based learning: also called as lazy learning
+- Instance based learning: also called as lazy learning. Learning techniques do not build a model but stores all training instance in memory and when they undergo classification they use proximity measures k closely related members to categorize them.
 
+![[Pasted image 20220123112721.png]]
+- Model Based learning where we detect patterns in the training data and build a predictive model
+
+## Challenges of machine learning
+![[Pasted image 20220123114515.png]]
+
+### Testing and Validation
+![[Pasted image 20220123120545.png]]
+
+### Cross Validation
+![[Pasted image 20220123122730.png]]
+
+### Choice of Hyperparameters
+- Modern ML modesl often use a lot of model params
+- Model performance depends on chouce of params
+- Each parm can assume a number of values
+- Expensive to perform
+- Grid Search CV method
+
+### Open Source ML Programming Tools
+![[Pasted image 20220123123602.png]]
 
 ---
 Tags: [[!AMLIndex]]
