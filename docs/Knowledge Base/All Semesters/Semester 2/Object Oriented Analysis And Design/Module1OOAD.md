@@ -80,5 +80,67 @@ The ':' used to differentiate the name and the type of the object
 ![[Pasted image 20220115120403.png]]
 
 
+## Iterative Development and the Unified Process
+### Unified Process
+- The critical idea is iterative development
+- Iterative development is successively enlarging and refining a system through multiple iterations, using feedback and adaptation
+- Each iteration will include requirements, analysis, design
+- The requirements of a project are completely frozen before the design and development process commences. As this approach is not always feasible, there is also a need for flexible and adaptable agile methods that allow late changes in specifications
+- RUP is a complete software development process framework developed by Rational Corporation
+- It is an iterative development methodolofy based upon six industry proven best practices
+
+### Phases in RUP
+- Inception
+- Elaboration
+- Construction
+- Transition
+
+#### Iterations
+![[Pasted image 20220129104632.png]]
+
+#### Resource Histogram
+![[Pasted image 20220129104717.png]]
+
+#### Unified Process Best Practices
+![[Pasted image 20220129105700.png]]
+
+#### Inception
+- Formulate the scope of the project
+- Plan and prepare the use case
+- Synthasize candidate architecture
+- Prepare the environment
+
+#### Inception Exit Criteria
+![[Pasted image 20220129110006.png]]
+
+#### Elaboration
+An analysis is done to determine the risk, stability of ision of what the product is going to become
+- Products and artifacts described in the exit criteria of the previous phase
+- The plan apporved by the project Management
+
+#### Elaboration Exit Criteria
+![[Pasted image 20220129110223.png]]
+
+#### Construction
+![[Pasted image 20220129110351.png]]
+
+#### Construction Exit Criteria
+![[Pasted image 20220129110419.png]]
+
+#### Transition
+![[Pasted image 20220129110537.png]]
+- Test product in customer side
+- Fine tune the product based on customer
+- Deliver the product to customer
+
+#### Transition Exit Criteria
+![[Pasted image 20220129110627.png]]
+
+#### Advantages of RUP
+![[Pasted image 20220129110705.png]]
+
+Fully Dressed Format
+![[Pasted image 20220129115407.png]]
+
 ---
 Tags: [[!OOADIndex]]

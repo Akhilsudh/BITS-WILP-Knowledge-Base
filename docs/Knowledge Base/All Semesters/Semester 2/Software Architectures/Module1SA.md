@@ -29,5 +29,7 @@ Structures on the other had are fairly easy to identify in software, and they fo
 
 ![[Pasted image 20220115093009.png]]
 
+
+
 ---
 Tags: [[!SoftwareArchitecturesIndex]]
