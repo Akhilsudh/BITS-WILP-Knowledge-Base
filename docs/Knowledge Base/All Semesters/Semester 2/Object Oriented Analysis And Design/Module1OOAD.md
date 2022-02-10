@@ -1,7 +1,6 @@
 # Module 1
 ## Terminologies
 #### Model
-
 #### Modeling Language
 ![[Pasted image 20220115104629.png]]
 
