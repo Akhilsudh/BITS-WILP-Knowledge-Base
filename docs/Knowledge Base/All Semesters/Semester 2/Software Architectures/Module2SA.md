@@ -66,5 +66,41 @@ The heartbeat monitor determines that the server is non responsive during normal
 ### Usability General Scenario
 ![[Pasted image 20220129101642.png]]
 
+
+## POS Terminal
+- Actors:
+	- Cashier
+	- Customer
+	- Supervisor
+
+### High level vs low level goals
+- log out: Secondary goal
+- Handle payment: Primary goal
+- Negotiate contract with supplier: Very high level goal
+
+These use cases are at different levels, and are the all valid
+
+## Extends relationship
+![[Pasted image 20220212105616.png]]
+
+## Specialization relationship
+![[Pasted image 20220212110031.png]]
+
+## Drawing System Sequence Diagrams
+Example POS terminal Process Sale scenario
+
+![[Pasted image 20220212111655.png]]
+Iterations are enclosed in one box
+
+![[Pasted image 20220212111742.png]]
+![[Pasted image 20220212111953.png]]
+
+## Domain Model
+![[Pasted image 20220212113003.png]]
+![[Pasted image 20220212113024.png]]
+
+## Finding concepts
+![[Pasted image 20220212114218.png]]
+
 ---
 Tags: [[!SoftwareArchitecturesIndex]]
