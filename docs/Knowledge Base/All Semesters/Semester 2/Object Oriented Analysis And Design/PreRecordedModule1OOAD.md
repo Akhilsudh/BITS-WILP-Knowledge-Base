@@ -87,3 +87,31 @@ All the stages are done one after the other from top to bottom. This means that 
 
 ![[Pasted image 20220215215421.png]]
 
+## UML
+- Unified Modeling language
+- Modeling language to draw diagrams in a uniform way
+
+### Class and Object in UML
+![[Pasted image 20220216221607.png]]
+
+Attributes in a class and object are shown as:
+![[Pasted image 20220216221728.png]]
+
+Operations are the things an object can do. In the programming domain these are basically methods that are implemented in a class
+
+![[Pasted image 20220216221859.png]]
+
+### Relationships in UML
+#### IS-A Inheritance: Superclass and subclass
+- A class may be the subset of another class
+- A saving account is also an account making it a subclass of account class
+- But at the same time not all accounts are savings account
+![[Pasted image 20220216222035.png]]
+![[Pasted image 20220216222352.png]]
+
+#### HAS-A Aggregation 
+- An object may be part of another object
+![[Pasted image 20220216222425.png]]
+
+---
+Tags: [[!OOADIndex]]
