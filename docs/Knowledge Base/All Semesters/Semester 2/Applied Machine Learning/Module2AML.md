@@ -63,6 +63,37 @@ Bank is loosing too much money due to bad loans and wants to reduce losses. The 
 ![[Pasted image 20220206120315.png]]
 ![[Pasted image 20220206121106.png]]
 
+## Data types of attributes
+![[Pasted image 20220223214645.png]]
+job, marital -> nominal
+education -> Ordinal
+credit default -> Binary (symmetric)
+housing loan -> Binary
+
+- Categorical
+- Binary
+	- Symmetric (Simple matching coefficient proximity measure)
+	- Asymmetric (Jaccart coefficient proximity measure)
+- Nominal
+- Numerical/continuous (Minkowsky distance for proximity measure)
+- to find outliers
+
+
+## Some pandas functions
+```python
+df.types() # Get the datatypes of all columns in dataframe
+df.info() # Get more info on non null values in data frame
+df.describe() # Get statistical summary of each attribute and 5 point summary of numberic attributes
+```
+
+## Data Types
+- relational/Object data
+- Transactional data
+- Document data
+- Web and social network data
+- Spatial data
+- time series data
+
 
 
 ---
