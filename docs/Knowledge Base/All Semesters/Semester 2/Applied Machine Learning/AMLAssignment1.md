@@ -469,7 +469,7 @@ plt.show()
 
 
     
-![png](output_13_0.png)
+![[output_13_0.png]]
     
 
 
@@ -489,31 +489,31 @@ for i in category_list:
 
 
     
-![png](output_16_0.png)
+![[output_16_0.png]]
     
 
 
 
     
-![png](output_16_1.png)
+![[output_16_1.png]]
     
 
 
 
     
-![png](output_16_2.png)
+![[output_16_2.png]]
     
 
 
 
     
-![png](output_16_3.png)
+![[output_16_3.png]]
     
 
 
 
     
-![png](output_16_4.png)
+![[output_16_4.png]]
     
 
 
@@ -908,7 +908,7 @@ plt.show()
 
 
     
-![png](output_42_1.png)
+![[output_42_1.png]]
     
 
 
@@ -927,7 +927,7 @@ plt.show()
 
 
     
-![png](output_42_3.png)
+![[output_42_3.png]]
     
 
 
@@ -945,7 +945,7 @@ print("\n----------------------------------\n")
 
 
     
-![png](output_44_0.png)
+![[output_44_0.png]]
     
 
 
@@ -1049,7 +1049,7 @@ plt.show()
 
 
     
-![png](output_53_1.png)
+![[output_53_1.png]]
     
 
 
@@ -1068,7 +1068,7 @@ plt.show()
 
 
     
-![png](output_53_3.png)
+![[output_53_3.png]]
     
 
 
@@ -1096,7 +1096,7 @@ print("\n----------------------------------\n")
 
 
     
-![png](output_55_0.png)
+![[output_55_0.png]]
     
 
 
@@ -1416,7 +1416,7 @@ plt.show()
 
 
     
-![png](output_64_1.png)
+![[output_64_1.png]]
     
 
 
@@ -1435,7 +1435,7 @@ plt.show()
 
 
     
-![png](output_64_3.png)
+![[output_64_3.png]]
     
 
 
