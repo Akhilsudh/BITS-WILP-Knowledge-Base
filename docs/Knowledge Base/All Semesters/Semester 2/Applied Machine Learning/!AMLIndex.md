@@ -23,6 +23,10 @@
 - Module 1 [[Module1AML]]
 - Module 2 [[Module2AML]]
 
+### Jupyter Notebooks
+- Data Preprocessing Notebook [[DataPreprocessingNotebook]]
+- Data Visualizing Notebook [[DataVisualisationNotebook]]
+- Data Cleaning Introduction [[DataCleaningNotebook]]
 
 ---
 Tags: [[!Semester2Index]]
