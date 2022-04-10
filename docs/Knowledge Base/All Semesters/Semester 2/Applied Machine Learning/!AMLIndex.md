@@ -16,8 +16,12 @@
 ### Evaluative Components
 ![[Pasted image 20220116112342.png]]
 
+### Assignments
+- Assignment 1 [[AMLAssignment1]]
+
 ### Live Course Content
-- Module 1 [[Module1OOAD]]
+- Module 1 [[Module1AML]]
+- Module 2 [[Module2AML]]
 
 
 ---
