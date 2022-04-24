@@ -96,7 +96,46 @@ df.describe() # Get statistical summary of each attribute and 5 point summary of
 
 > **Note:** Topics such as data types, pre processing, visualization and analysis are explained well in Jupyter Notebooks
 
-### Jupyter Notebooks
+---------------------------------
+---------------------------------
+## Sampling
+![[Pasted image 20220305200924.png]]
+
+## Binarization
+![[Pasted image 20220305201254.png]]
+
+## One Hot Encoding
+![[Pasted image 20220305201514.png]]
+
+## Attribute Transformation
+![[Pasted image 20220305202106.png]]
+- This is done to reduce skewness in data.
+- Transformation is done to bring data to the same scale that helps in feature scaling
+
+## Normalization
+- ![[Pasted image 20220305203518.png]]
+- ![[Pasted image 20220305203529.png]]
+- ![[Pasted image 20220305203538.png]]
+![[Pasted image 20220305204448.png]]
+Robust scaler normalizes withing the IQR (Q3 - Q1)
+
+## Curse of Dimensionality
+![[Pasted image 20220305204815.png]]
+### Dimensionality Reduction
+![[Pasted image 20220305204923.png]]
+- **PCA:** ![[Pasted image 20220305205134.png]]
+- **Other ways to reduce dimensionality:** ![[Pasted image 20220305210052.png]]
+- Correlation Decision:
+	- Chi Square Stats (Categorical attributes)
+	- Pearson Coefficient (Numeric attributes)
+	- Annova Test (Mixed attributes)
+- Wrapper Method is to train models with several subsets of data and choose the one that was most fruitful do then do further improvement on that.
+
+## Feature Creation
+![[Pasted image 20220305214801.png]]
+
+---
+Tags: [[!AMLIndex]]
 
 
 

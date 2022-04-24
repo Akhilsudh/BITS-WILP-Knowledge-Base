@@ -70,6 +70,7 @@ plugins:
         - "*.tmp"
         - "*.pdf"
         - "*.gz"
+        - "EmbeddedNotes*.md"
       regex:
         - '.*\.(tmp|bin|tar)$'
 extra_css:
