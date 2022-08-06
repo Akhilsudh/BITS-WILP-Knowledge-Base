@@ -1,8 +1,9 @@
 # Knowledge Base Index
-This page is an index for all semesters 
+This page has links to important resources.
 
-| Title                 | Link                      |
-| --------------------- | ------------------------- |
+| Title                 | Link                     |
+| --------------------- | ------------------------ |
 | Induction Orientation | [[InductionOrientation]] |
-| All Semesters Index   | [[!AllSemestersIndex]]    |
-| All Question Papers   | [[QuestionPapers]]        |
+| All Semesters Index   | [[!AllSemestersIndex]]   |
+| All Question Papers   | [[QuestionPapers]]       |
+| All Assignments       | [[Assignments]]          | 

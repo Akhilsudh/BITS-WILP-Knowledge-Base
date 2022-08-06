@@ -1470,4 +1470,4 @@ $F = 2 \times \frac{Precision \times Recall}{Precision + Recall}$
 This goes to show why Model 3 has better F score since its recall and precision is better than the other two models.
 
 ---
-Tags: [[!AMLIndex]]
+Tags: [[!AMLIndex]] [[Assignments]]

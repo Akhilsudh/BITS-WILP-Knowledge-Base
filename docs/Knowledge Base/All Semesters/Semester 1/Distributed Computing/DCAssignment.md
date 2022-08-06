@@ -9,3 +9,6 @@ Write a program to implement the Ricart-Agrawala algorithm for implementing dist
 
 ### My Submission
 The code implementation along with the readme can be found [here](https://github.com/Akhilsudh/BITS-Assignment/tree/master/Semester%201/Distributed%20Computing)
+
+---
+tags: [[!DistributedComputingIndex]] [[Assignments]]

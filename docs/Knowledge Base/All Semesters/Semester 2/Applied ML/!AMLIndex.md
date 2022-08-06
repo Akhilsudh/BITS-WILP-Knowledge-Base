@@ -1,4 +1,4 @@
-# Applied Machine Learning Index
+# Applied Machine Learning
 
 ## Course Plan
 ### Modules
@@ -18,6 +18,10 @@
 
 ### Assignments
 - Assignment 1 [[AMLAssignment1]]
+
+### Question Papers
+- [[Mid Sem Paper AML]]
+- [[End Sem Paper AML]]
 
 ### Live Course Content
 - Module 1 [[Module1AML]]

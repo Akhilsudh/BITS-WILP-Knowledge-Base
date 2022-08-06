@@ -1,5 +1,5 @@
 # Question Papers
-The list of all question papers of subjects I took and attempted 
+The list of all question papers of subjects I took as part of my WILP program
 
 ## Semester 1
 - Database Design and Applications
@@ -16,6 +16,18 @@ The list of all question papers of subjects I took and attempted
 	- [[End Sem Paper MFDS]]
 
 ## Semester 2
+- Advanced Statistics
+	- [[Mid Sem Paper AS]]
+	- [[End Sem Paper AS]]
 - Applied Machine Learning
 	- [[Mid Sem Paper AML]]
 	- [[End Sem Paper AML]]
+- Object Oriented Analysis and Design
+	- [[Mid Sem Paper OOAD]]
+	- [[End Sem Paper OOAD]]
+- Software Architectures
+	- [[Mid Sem Paper SA]]
+	- [[End Sem Paper SA]]
+
+---
+tags: [[!KBIndex]]

@@ -7,3 +7,6 @@
 ### My Submission
 - The actual Assignment can be found [here](https://github.com/Akhilsudh/BITS-Assignment/blob/master/Semester%201/Mathematical%20Foundation%20For%20Data%20Science/Assignment%202/2021MT12054.pdf)
 - The code along with the metrics collected can be found [here](https://github.com/Akhilsudh/BITS-Assignment/tree/master/Semester%201/Mathematical%20Foundation%20For%20Data%20Science/Assignment%202)
+
+---
+tags: [[!MathematicalFoundationsIndex]] [[Assignments]]
