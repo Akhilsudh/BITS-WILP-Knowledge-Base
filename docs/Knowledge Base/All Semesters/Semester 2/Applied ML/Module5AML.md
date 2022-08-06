@@ -70,7 +70,12 @@ In python we can use `sklearn`'s `predictProba` to calculate the probabilities t
 > **Note:** Topics such as Conditional probability, Independence, Law of total probability and Bayes theorem are extensively discussed in the Advanced statistics course
 
 
+## Naive Bayesian Classifier
+In this classifier we use conditional probability to predict a class $y$ given the values of other attributes $X$. This is given as :
 
+$P(y | X) = \frac{P(X | y) \times P(y)}{P(X)}$
+
+For the sake of simplicity we can ignore the denominator and choose $y$ based on maximizing 
 
 ---
 Tags: [[!AMLIndex]]

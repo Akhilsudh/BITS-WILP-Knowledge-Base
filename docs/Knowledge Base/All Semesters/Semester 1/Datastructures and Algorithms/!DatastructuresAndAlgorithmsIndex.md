@@ -1,5 +1,10 @@
-# Datastructure and Algorithm Index
+# Datastructure and Algorithm
 
+### Question Papers
+- [[Mid Sem Paper DSA]]
+- [[End Sem Paper DSA]]
+
+### Notes Index
 This is an Index page for all Distributed Computing Content
 
 - Week 1

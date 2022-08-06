@@ -1,11 +1,15 @@
 # Mathematical Foundations for Data Science Index
 
-This is an Index page for all Mathematical Foundations for Data Science Content.
+This is the page for all Mathematical Foundations for Data Science Content.
 **Note:** Since the live lectures for this subject was interactive and less theoretical, the notes takes as a result is quite minimal
 
 ### Assignments
 - Assignment 1 [[MFDSAssignment1]]
 - Assignment 2 [[MFDSAssignment2]]
+
+### Question Papers
+- [[Mid Sem Paper MFDS]]
+- [[End Sem Paper MFDS]]
 
 ### Course Content
 #### Part 1 (Matrices / Vectors / Linear Programming)

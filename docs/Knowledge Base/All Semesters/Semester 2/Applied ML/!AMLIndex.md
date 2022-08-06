@@ -22,6 +22,10 @@
 ### Live Course Content
 - Module 1 [[Module1AML]]
 - Module 2 [[Module2AML]]
+- Module 3 [[Module3AML]]
+- Module 5 [[Module5AML]]
+- Module 6 [[Module6AML]]
+- Module 7 [[Module7AML]]
 
 ### Jupyter Notebooks
 - Data Preprocessing Notebook [[DataPreprocessingNotebook]]

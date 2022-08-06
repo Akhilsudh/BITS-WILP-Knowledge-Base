@@ -268,5 +268,17 @@ A broker component helps in achieving better decoupling of clients and servers
 - Inefficiency of data access in view
 - Difficulty of using MVC with modern user interface tools
 
+###  Micro Kernel
+#### Context
+The development of several applications that use similar programming interfaces that build on the same core functionality
+
+#### Problem
+- Developing software for an application domain that needs to cope with a broad spectrum of similar standards and technologies
+- Continuous evolution, platform must be extensible, portable and adaptable
+
+![[Pasted image 20220510011328.png]]
+![[Pasted image 20220510012825.png]]
+
+
 ---
 Tags: [[!SoftwareArchitecturesIndex]]

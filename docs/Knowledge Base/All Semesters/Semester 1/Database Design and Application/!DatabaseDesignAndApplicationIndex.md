@@ -1,5 +1,10 @@
-# Database Design and Application Index
+# Database Design and Application
 
+### Question Papers
+- [[Mid Sem Paper DDA]]
+- [[End Sem Paper DDA]]
+
+### Notes Index
 This is an Index page for all Database Design and Application Content
 
 - Week 1
@@ -22,7 +27,6 @@ This is an Index page for all Database Design and Application Content
 	- Lecture Notes: [[Week10DBA]]
 - Week 11
 	- Lecture Notes: [[Week11DBA]]
-
 
 - Note Summary: [[EmbeddedNotesDBA]]
 

@@ -4,6 +4,10 @@ This is an Index page for all Distributed Computing Content
 ### Assignment
 - Assignment [[DCAssignment]]
 
+### Question Papers
+- [[Mid Sem Paper DC]]
+- [[End Sem Paper DC]]
+
 ### Course Content
 - Week 1
 	- Pre Reading: [[PreRecordedModule12]]
