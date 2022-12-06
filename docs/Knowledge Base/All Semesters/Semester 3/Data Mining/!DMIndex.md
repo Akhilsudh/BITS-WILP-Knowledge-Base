@@ -21,7 +21,12 @@
 
 ## Index
 
+### Assignment
+[[DMAssignment]]
 
+### Question Papers
+- [[Mid Sem Paper DM]]
+- [[End Sem Paper DM]]
 
 
 ---

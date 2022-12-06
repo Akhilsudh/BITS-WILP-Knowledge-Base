@@ -29,5 +29,16 @@ The list of all question papers of subjects I took as part of my WILP program
 	- [[Mid Sem Paper SA]]
 	- [[End Sem Paper SA]]
 
+## Semester 3
+- Data Mining
+	- [[Mid Sem Paper DM]]
+	- [[End Sem Paper DM]]
+- Deep Learning
+	- [[Mid Sem Paper DL]]
+	- [[End Sem Paper DL]]
+- Natural Language Processing
+	- [[Mid Sem Paper NLP]]
+	- [[End Sem Paper NLP]]
+
 ---
 tags: [[!KBIndex]]

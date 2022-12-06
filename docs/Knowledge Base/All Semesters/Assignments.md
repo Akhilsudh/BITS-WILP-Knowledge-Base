@@ -19,6 +19,14 @@ The list of all assignments of subjects I took as part of my WILP program
 - Software Architectures
 	- [[SAAssignment1]]
 	- [[SAAssignment2]]
+	  
+## Semester 3
+- Data Mining
+	- [[DMAssignment]]
+- Deep Learning
+	- [[DLAssignment]]
+- Natural Language Processing
+	- [[NLPAssignment]]
 
 ---
 tags: [[!KBIndex]]

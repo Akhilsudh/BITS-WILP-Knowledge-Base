@@ -28,7 +28,12 @@
 	- Applications: Computer Vision, Speech Recognition etc.
 
 ## Index
+### Assignment
+[[DLAssignment]]
 
+### Question Papers
+- [[Mid Sem Paper DL]]
+- [[End Sem Paper DL]]
 
 ---
 Tags: [[!Semester3Index]]

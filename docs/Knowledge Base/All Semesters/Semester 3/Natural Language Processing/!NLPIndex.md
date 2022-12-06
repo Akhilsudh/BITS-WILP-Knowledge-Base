@@ -14,7 +14,12 @@
 ## Index
 - [[ Spam Detection Jupyter Notebook ]]
 
+### Assignment
+[[NLPAssignment]]
 
+### Question Papers
+- [[Mid Sem Paper NLP]]
+- [[End Sem Paper NLP]]
 
 ---
 Tags: [[!Semester3Index]]
