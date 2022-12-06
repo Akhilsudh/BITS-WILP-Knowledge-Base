@@ -1,0 +1,4215 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.1.10">
+    
+    
+      
+        <title>Notebook for data cleaning - My BITS WILP Knowledge Base</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.1fe995fd.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.f1a3b89f.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="https://unpkg.com/mermaid@7.1.2/dist/mermaid.css">
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="teal">
+  
+    
+    <script>function __prefix(e){return new URL("../../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#notebook-for-data-cleaning" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../../index.html" title="My BITS WILP Knowledge Base" class="md-header__button md-logo" aria-label="My BITS WILP Knowledge Base" data-md-component="logo">
+      
+  <img src="../../../../Assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            My BITS WILP Knowledge Base
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Notebook for data cleaning
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="green" data-md-color-accent="green"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../../index.html" title="My BITS WILP Knowledge Base" class="md-nav__button md-logo" aria-label="My BITS WILP Knowledge Base" data-md-component="logo">
+      
+  <img src="../../../../Assets/logo.png" alt="logo">
+
+    </a>
+    My BITS WILP Knowledge Base
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../index.html" class="md-nav__link">
+        Hello 👋🏽
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../about.html" class="md-nav__link">
+        About Me 👨🏽‍💻
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      <label class="md-nav__link" for="__nav_3">
+        Knowledge Base
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Knowledge Base" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Knowledge Base
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%21KBIndex.html" class="md-nav__link">
+        Knowledge Base Index
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../InductionOrientation.html" class="md-nav__link">
+        WILP Induction Orientation Details
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" checked>
+      
+      <label class="md-nav__link" for="__nav_3_3">
+        All Semesters
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="All Semesters" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          All Semesters
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%21AllSemestersIndex.html" class="md-nav__link">
+        All Semesters Index
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Assignments.html" class="md-nav__link">
+        Assignments
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../QuestionPapers.html" class="md-nav__link">
+        Question Papers
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_4" type="checkbox" id="__nav_3_3_4" >
+      
+      <label class="md-nav__link" for="__nav_3_3_4">
+        Semester 1
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Semester 1" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_3_4">
+          <span class="md-nav__icon md-icon"></span>
+          Semester 1
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/%21Semester1Index.html" class="md-nav__link">
+        Semester 1 Index
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_4_2" type="checkbox" id="__nav_3_3_4_2" >
+      
+      <label class="md-nav__link" for="__nav_3_3_4_2">
+        Database Design and Application
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Database Design and Application" data-md-level="4">
+        <label class="md-nav__title" for="__nav_3_3_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          Database Design and Application
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Database%20Design%20and%20Application/%21DatabaseDesignAndApplicationIndex.html" class="md-nav__link">
+        Database Design and Application
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Database%20Design%20and%20Application/EmbeddedNotesDBA.html" class="md-nav__link">
+        Database Design and Application Notes
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Database%20Design%20and%20Application/End%20Sem%20Paper%20DDA.html" class="md-nav__link">
+        End Sem DDA Paper
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Database%20Design%20and%20Application/Mid%20Sem%20Paper%20DDA.html" class="md-nav__link">
+        Mid Sem DDA Paper
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Database%20Design%20and%20Application/Week10DBA.html" class="md-nav__link">
+        Week 10
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Database%20Design%20and%20Application/Week11DBA.html" class="md-nav__link">
+        Week 11
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Database%20Design%20and%20Application/Week1DBA.html" class="md-nav__link">
+        Week 1
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Database%20Design%20and%20Application/Week2DBA.html" class="md-nav__link">
+        Week 2
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Database%20Design%20and%20Application/Week3DBA.html" class="md-nav__link">
+        Week 3
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Database%20Design%20and%20Application/Week5DBA.html" class="md-nav__link">
+        Week 5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Database%20Design%20and%20Application/Week6DBA.html" class="md-nav__link">
+        Week 6
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Database%20Design%20and%20Application/Week7DBA.html" class="md-nav__link">
+        Week 7
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Database%20Design%20and%20Application/Week8DBA.html" class="md-nav__link">
+        Week 8
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Database%20Design%20and%20Application/Week9DBA.html" class="md-nav__link">
+        Week 9
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_4_3" type="checkbox" id="__nav_3_3_4_3" >
+      
+      <label class="md-nav__link" for="__nav_3_3_4_3">
+        Datastructures and Algorithms
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Datastructures and Algorithms" data-md-level="4">
+        <label class="md-nav__title" for="__nav_3_3_4_3">
+          <span class="md-nav__icon md-icon"></span>
+          Datastructures and Algorithms
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Datastructures%20and%20Algorithms/%21DatastructuresAndAlgorithmsIndex.html" class="md-nav__link">
+        Datastructure and Algorithm
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Datastructures%20and%20Algorithms/EmbeddedNotesDSA.html" class="md-nav__link">
+        Data Structures And Algorithms Notes
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Datastructures%20and%20Algorithms/End%20Sem%20Paper%20DSA.html" class="md-nav__link">
+        End Sem DSA Paper
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Datastructures%20and%20Algorithms/Mid%20Sem%20Paper%20DSA.html" class="md-nav__link">
+        Mid Sem DSA Paper
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Datastructures%20and%20Algorithms/Week11DSA.html" class="md-nav__link">
+        Week 11
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Datastructures%20and%20Algorithms/Week12DSA3.html" class="md-nav__link">
+        Week 12 (cont.)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Datastructures%20and%20Algorithms/Week1DSA.html" class="md-nav__link">
+        Week 1
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Datastructures%20and%20Algorithms/Week2DSA.html" class="md-nav__link">
+        Week 2
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Datastructures%20and%20Algorithms/Week4DSA.html" class="md-nav__link">
+        Week 4
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Datastructures%20and%20Algorithms/Week4DSA2.html" class="md-nav__link">
+        Week 4 (cont.)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Datastructures%20and%20Algorithms/Week5DSA.html" class="md-nav__link">
+        Week 5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Datastructures%20and%20Algorithms/Week5DSA2.html" class="md-nav__link">
+        Week 5 (cont.)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Datastructures%20and%20Algorithms/Week6DSA.html" class="md-nav__link">
+        Week 6
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Datastructures%20and%20Algorithms/Week6DSA2.html" class="md-nav__link">
+        Week 6 (cont.)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Datastructures%20and%20Algorithms/Week7DSA.html" class="md-nav__link">
+        Week 7
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Datastructures%20and%20Algorithms/Week8DSA.html" class="md-nav__link">
+        Week 8
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Datastructures%20and%20Algorithms/Week9DSA.html" class="md-nav__link">
+        Week 9
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_4_4" type="checkbox" id="__nav_3_3_4_4" >
+      
+      <label class="md-nav__link" for="__nav_3_3_4_4">
+        Distributed Computing
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Distributed Computing" data-md-level="4">
+        <label class="md-nav__title" for="__nav_3_3_4_4">
+          <span class="md-nav__icon md-icon"></span>
+          Distributed Computing
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Distributed%20Computing/%21DistributedComputingIndex.html" class="md-nav__link">
+        Distributed Computing Index
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Distributed%20Computing/DCAssignment.html" class="md-nav__link">
+        DC Assignment
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Distributed%20Computing/EmbeddedNotesDC.html" class="md-nav__link">
+        Distributed Computing Notes
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Distributed%20Computing/End%20Sem%20Paper%20DC.html" class="md-nav__link">
+        End Sem DC Paper
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Distributed%20Computing/Mid%20Sem%20Paper%20DC.html" class="md-nav__link">
+        Mid Sem DC Paper
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Distributed%20Computing/PreRecordedModule12.html" class="md-nav__link">
+        Module 1
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Distributed%20Computing/PreRecordedModule3.html" class="md-nav__link">
+        Module 3
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Distributed%20Computing/PreRecordedModule4.html" class="md-nav__link">
+        Module 4
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Distributed%20Computing/PreRecordedModule5.html" class="md-nav__link">
+        Module 5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Distributed%20Computing/PreRecordedModule6.html" class="md-nav__link">
+        Module 6
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Distributed%20Computing/PreRecordedModule7.html" class="md-nav__link">
+        Module 7
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Distributed%20Computing/PreRecordedModule8.html" class="md-nav__link">
+        Module 8
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Distributed%20Computing/Week10DC.html" class="md-nav__link">
+        Week 10
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Distributed%20Computing/Week1DC.html" class="md-nav__link">
+        Week 1
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Distributed%20Computing/Week2DC.html" class="md-nav__link">
+        Week 2
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Distributed%20Computing/Week3DC.html" class="md-nav__link">
+        Week 3
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Distributed%20Computing/Week4DC.html" class="md-nav__link">
+        Week 4
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Distributed%20Computing/Week4DC2.html" class="md-nav__link">
+        Week 4 (cont.)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Distributed%20Computing/Week5DC.html" class="md-nav__link">
+        Week 5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Distributed%20Computing/Week6DC.html" class="md-nav__link">
+        Week 6
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Distributed%20Computing/Week7DC.html" class="md-nav__link">
+        Week 7
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Distributed%20Computing/Week8DC.html" class="md-nav__link">
+        Week 8
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Distributed%20Computing/Week9DC.html" class="md-nav__link">
+        Week 9
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_4_5" type="checkbox" id="__nav_3_3_4_5" >
+      
+      <label class="md-nav__link" for="__nav_3_3_4_5">
+        Mathematical Foundations for Data Science
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Mathematical Foundations for Data Science" data-md-level="4">
+        <label class="md-nav__title" for="__nav_3_3_4_5">
+          <span class="md-nav__icon md-icon"></span>
+          Mathematical Foundations for Data Science
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Mathematical%20Foundations%20for%20Data%20Science/%21MathematicalFoundationsIndex.html" class="md-nav__link">
+        Mathematical Foundations for Data Science Index
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Mathematical%20Foundations%20for%20Data%20Science/EmbeddedNotesMFDS.html" class="md-nav__link">
+        Mathematical Foundations For Datascience Notes
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Mathematical%20Foundations%20for%20Data%20Science/End%20Sem%20Paper%20MFDS.html" class="md-nav__link">
+        End Sem MFDS Paper
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Mathematical%20Foundations%20for%20Data%20Science/GaussianEliminationPython.html" class="md-nav__link">
+        Gaussian Elimination Code
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Mathematical%20Foundations%20for%20Data%20Science/MFDSAssignment1.html" class="md-nav__link">
+        MFDS Assignment 1
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Mathematical%20Foundations%20for%20Data%20Science/MFDSAssignment2.html" class="md-nav__link">
+        MFDS Assignment 2
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Mathematical%20Foundations%20for%20Data%20Science/Mid%20Sem%20Paper%20MFDS.html" class="md-nav__link">
+        Mid Sem MFDS Paper
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Mathematical%20Foundations%20for%20Data%20Science/OctaveCheatSheet.html" class="md-nav__link">
+        Octave Cheat Sheet
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Mathematical%20Foundations%20for%20Data%20Science/Week1MFDS.html" class="md-nav__link">
+        Week 1
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Mathematical%20Foundations%20for%20Data%20Science/Week2MFDS.html" class="md-nav__link">
+        Week 2
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Mathematical%20Foundations%20for%20Data%20Science/Week3MFDS.html" class="md-nav__link">
+        Week 3
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Mathematical%20Foundations%20for%20Data%20Science/Week4MFDS.html" class="md-nav__link">
+        Week 4
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Mathematical%20Foundations%20for%20Data%20Science/Week5MFDS.html" class="md-nav__link">
+        Week 5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Mathematical%20Foundations%20for%20Data%20Science/Week6MFDS.html" class="md-nav__link">
+        Week 6
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Mathematical%20Foundations%20for%20Data%20Science/Week6MFDS2.html" class="md-nav__link">
+        Week 6 (cont.)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Mathematical%20Foundations%20for%20Data%20Science/Week7MFDS.html" class="md-nav__link">
+        Week 7
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Mathematical%20Foundations%20for%20Data%20Science/Week8MFDS.html" class="md-nav__link">
+        Week 8
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%201/Mathematical%20Foundations%20for%20Data%20Science/Week8MFDS2.html" class="md-nav__link">
+        Week 8 (cont.)
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_5" type="checkbox" id="__nav_3_3_5" checked>
+      
+      <label class="md-nav__link" for="__nav_3_3_5">
+        Semester 2
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Semester 2" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_3_5">
+          <span class="md-nav__icon md-icon"></span>
+          Semester 2
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%21Semester2Index.html" class="md-nav__link">
+        Semester 2 Index
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_5_2" type="checkbox" id="__nav_3_3_5_2" >
+      
+      <label class="md-nav__link" for="__nav_3_3_5_2">
+        Advanced Statistics
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Advanced Statistics" data-md-level="4">
+        <label class="md-nav__title" for="__nav_3_3_5_2">
+          <span class="md-nav__icon md-icon"></span>
+          Advanced Statistics
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Advanced%20Statistics/%21ASIndex.html" class="md-nav__link">
+        Advanced Statistics
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Advanced%20Statistics/ASAssignment1.html" class="md-nav__link">
+        Advanced Statistics Assignment 1
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Advanced%20Statistics/End%20Sem%20Paper%20AS.html" class="md-nav__link">
+        End Sem AS Paper
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Advanced%20Statistics/Mid%20Sem%20Paper%20AS.html" class="md-nav__link">
+        Mid Sem AS Paper
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_5_3" type="checkbox" id="__nav_3_3_5_3" checked>
+      
+      <label class="md-nav__link" for="__nav_3_3_5_3">
+        Applied ML
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Applied ML" data-md-level="4">
+        <label class="md-nav__title" for="__nav_3_3_5_3">
+          <span class="md-nav__icon md-icon"></span>
+          Applied ML
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="%21AMLIndex.html" class="md-nav__link">
+        Applied Machine Learning
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AMLAssignment1.html" class="md-nav__link">
+        Applied ML Assignment 1
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="DataCleaningNotebook.html" class="md-nav__link md-nav__link--active">
+        Notebook for data cleaning
+      </a>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="DataPreprocessingNotebook.html" class="md-nav__link">
+        Notebook for data preprocessing
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="DataVisualisationNotebook.html" class="md-nav__link">
+        Notebook for data visualization
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="End%20Sem%20Paper%20AML.html" class="md-nav__link">
+        End Sem AML Paper
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Mid%20Sem%20Paper%20AML.html" class="md-nav__link">
+        Mid Sem AML Paper
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Module1AML.html" class="md-nav__link">
+        Module 1
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Module2AML.html" class="md-nav__link">
+        Module 2
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Module3AML.html" class="md-nav__link">
+        Module 3
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Module5AML.html" class="md-nav__link">
+        Module 5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Module6AML.html" class="md-nav__link">
+        Module 6
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Module7AML.html" class="md-nav__link">
+        Module 7
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_5_4" type="checkbox" id="__nav_3_3_5_4" >
+      
+      <label class="md-nav__link" for="__nav_3_3_5_4">
+        Object Oriented Analysis And Design
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Object Oriented Analysis And Design" data-md-level="4">
+        <label class="md-nav__title" for="__nav_3_3_5_4">
+          <span class="md-nav__icon md-icon"></span>
+          Object Oriented Analysis And Design
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Object%20Oriented%20Analysis%20And%20Design/%21OOADIndex.html" class="md-nav__link">
+        Object Oriented Analysis And Design
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Object%20Oriented%20Analysis%20And%20Design/End%20Sem%20Paper%20OOAD.html" class="md-nav__link">
+        End Sem OOAD Paper
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Object%20Oriented%20Analysis%20And%20Design/Mid%20Sem%20Paper%20OOAD.html" class="md-nav__link">
+        Mid Sem OOAD Paper
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Object%20Oriented%20Analysis%20And%20Design/Module1OOAD.html" class="md-nav__link">
+        Module 1
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Object%20Oriented%20Analysis%20And%20Design/Module3OOAD.html" class="md-nav__link">
+        Module 3
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Object%20Oriented%20Analysis%20And%20Design/Module4OOAD.html" class="md-nav__link">
+        Module 4
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Object%20Oriented%20Analysis%20And%20Design/OOADAssignment.html" class="md-nav__link">
+        OBJECT ORIENTED ANALYSIS AND DESIGN ASSIGNMENT
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Object%20Oriented%20Analysis%20And%20Design/PreRecordedModule1OOAD.html" class="md-nav__link">
+        Pre Recorded Lecture Module 1
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Object%20Oriented%20Analysis%20And%20Design/PreRecordedModule2OOAD.html" class="md-nav__link">
+        Pre Recorded Lecture Module 2
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Object%20Oriented%20Analysis%20And%20Design/PreRecordedModule3OOAD.html" class="md-nav__link">
+        Pre Recorded Lecture Module 3
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Object%20Oriented%20Analysis%20And%20Design/PreRecordedModule4OOAD.html" class="md-nav__link">
+        Pre Recorded Lecture Module 4
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_5_5" type="checkbox" id="__nav_3_3_5_5" >
+      
+      <label class="md-nav__link" for="__nav_3_3_5_5">
+        Software Architectures
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Software Architectures" data-md-level="4">
+        <label class="md-nav__title" for="__nav_3_3_5_5">
+          <span class="md-nav__icon md-icon"></span>
+          Software Architectures
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Software%20Architectures/%21SoftwareArchitecturesIndex.html" class="md-nav__link">
+        Software Architectures
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Software%20Architectures/End%20Sem%20Paper%20SA.html" class="md-nav__link">
+        End Sem SA Paper
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Software%20Architectures/Mid%20Sem%20Paper%20SA.html" class="md-nav__link">
+        Mid Sem SA Paper
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Software%20Architectures/Module1SA.html" class="md-nav__link">
+        Module 1
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Software%20Architectures/Module2SA.html" class="md-nav__link">
+        Module 2
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Software%20Architectures/Module6SA.html" class="md-nav__link">
+        Module 6
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Software%20Architectures/Module8SA.html" class="md-nav__link">
+        Module 8
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Software%20Architectures/PreRecordedModule1SA.html" class="md-nav__link">
+        Module 1
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Software%20Architectures/SAAssignment1.html" class="md-nav__link">
+        Assignment #1 (5% weight)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Software%20Architectures/SAAssignment2.html" class="md-nav__link">
+        Assignment #2 (10% weight, 5% for Submission 5% for Discussion)
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_6" type="checkbox" id="__nav_3_3_6" >
+      
+      <label class="md-nav__link" for="__nav_3_3_6">
+        Semester 3
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Semester 3" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_3_6">
+          <span class="md-nav__icon md-icon"></span>
+          Semester 3
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%203/%21Semester3Index.html" class="md-nav__link">
+        Semester 3 Index
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_6_2" type="checkbox" id="__nav_3_3_6_2" >
+      
+      <label class="md-nav__link" for="__nav_3_3_6_2">
+        Data Mining
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Data Mining" data-md-level="4">
+        <label class="md-nav__title" for="__nav_3_3_6_2">
+          <span class="md-nav__icon md-icon"></span>
+          Data Mining
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%203/Data%20Mining/%21DMIndex.html" class="md-nav__link">
+        Data Mining
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%203/Data%20Mining/DMAssignment.html" class="md-nav__link">
+        Data Mining Assignment
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%203/Data%20Mining/End%20Sem%20Paper%20DM.html" class="md-nav__link">
+        End Sem DM Paper
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%203/Data%20Mining/Mid%20Sem%20Paper%20DM.html" class="md-nav__link">
+        Mid Sem DM Paper
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_6_3" type="checkbox" id="__nav_3_3_6_3" >
+      
+      <label class="md-nav__link" for="__nav_3_3_6_3">
+        Deep Learning
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Deep Learning" data-md-level="4">
+        <label class="md-nav__title" for="__nav_3_3_6_3">
+          <span class="md-nav__icon md-icon"></span>
+          Deep Learning
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%203/Deep%20Learning/%21DLIndex.html" class="md-nav__link">
+        Deep Learning
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%203/Deep%20Learning/DLAssignment.html" class="md-nav__link">
+        Deep Learning Assignment
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%203/Deep%20Learning/End%20Sem%20Paper%20DL.html" class="md-nav__link">
+        End Sem DL Paper
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%203/Deep%20Learning/Mid%20Sem%20Paper%20DL.html" class="md-nav__link">
+        Mid Sem DL Paper
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_6_4" type="checkbox" id="__nav_3_3_6_4" >
+      
+      <label class="md-nav__link" for="__nav_3_3_6_4">
+        Natural Language Processing
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Natural Language Processing" data-md-level="4">
+        <label class="md-nav__title" for="__nav_3_3_6_4">
+          <span class="md-nav__icon md-icon"></span>
+          Natural Language Processing
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%203/Natural%20Language%20Processing/%21NLPIndex.html" class="md-nav__link">
+        Natural Language Processing
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%203/Natural%20Language%20Processing/End%20Sem%20Paper%20NLP.html" class="md-nav__link">
+        End Sem NLP Paper
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%203/Natural%20Language%20Processing/Mid%20Sem%20Paper%20NLP.html" class="md-nav__link">
+        Mid Sem NLP Paper
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%203/Natural%20Language%20Processing/NLPAssignment.html" class="md-nav__link">
+        NLPAssignment
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Semester%203/Natural%20Language%20Processing/Spam%20Detection%20Jupyer%20Notebook.html" class="md-nav__link">
+        Spam Detection Jupyter Notebook
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="notebook-for-data-cleaning">Notebook for data cleaning<a class="headerlink" href="#notebook-for-data-cleaning" title="Permanent link">#</a></h1>
+<p>Reference: <a href="https://www.justintodata.com/data-cleaning-techniques-python-guide/#what-is-data-cleaning-and-why-is-it-important">https://www.justintodata.com/data-cleaning-techniques-python-guide/#what-is-data-cleaning-and-why-is-it-important</a></p>
+<p><u><b>Data Cleaning</b></u>: Data cleansing or data cleaning is the process of detecting and correcting (or removing) corrupt or inaccurate records from a record set, table, or database and refers to identifying incomplete, incorrect, inaccurate or irrelevant parts of the data and then replacing, modifying, or deleting the dirty or coarse data.</p>
+<ul>Methods & techniques in Python on how to find and clean:
+<li>Missing data
+<li>Irregular data (outliers)
+<li>Unnecessary data — repetitive data, duplicates, and more
+<li>Inconsistent data — capitalization, data types, typos, addresses
+
+Raw data is always messy, may suffer from various quality issues. We can't use it as it is. If you use such data for analysis, for example, feed into a machine learning model, you’ll get useless insights most of the time. That’s why data cleansing is a critical process for data analysts and data scientists.
+
+<ul><u><b> Useful Python Libraries </b></u>
+    <li><b>pandas:</b> a popular data analysis and manipulation tool, which will be used for most of our data cleaning techniques
+    <li><b>seaborn:</b> statistical data visualization library
+
+<li> <b>Missingno</b> Python library that provides a series of visualisations to understand the presence and distribution of missing data within a pandas dataframe. 
+    <li><b> nltk:</b> natural language toolkit   
+
+<b><u>Case Study</u> -->  Russian housing market dataset</b>
+The goal of the project is to predict housing prices.
+
+
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;sberbank-russian-housing-market/train/train.csv&quot;</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<span class="n">df</span><span class="o">.</span><span class="n">shape</span>
+</code></pre></div>
+
+
+
+
+    (30471, 292)
+
+
+
+There are 292 columns and 30471 rows in the data set
+
+
+<div class="highlight"><pre><span></span><code><span class="c1"># to check datatypes </span>
+<span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</code></pre></div>
+
+    <class 'pandas.core.frame.DataFrame'>
+    RangeIndex: 30471 entries, 0 to 30470
+    Columns: 292 entries, id to price_doc
+    dtypes: float64(119), int64(157), object(16)
+    memory usage: 67.9+ MB
+
+
+
+<div class="highlight"><pre><span></span><code><span class="c1"># to identify numeric and non-numeric attributes in the dataset</span>
+<span class="n">numeric_cols</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;number&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">columns</span>
+<span class="n">non_numeric_cols</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">exclude</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;number&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">columns</span>
+</code></pre></div>
+
+
+<div class="highlight"><pre><span></span><code><span class="n">numeric_cols</span>
+</code></pre></div>
+
+
+
+
+    Index(['id', 'full_sq', 'life_sq', 'floor', 'max_floor', 'material',
+           'build_year', 'num_room', 'kitch_sq', 'state',
+           ...
+           'cafe_count_5000_price_2500', 'cafe_count_5000_price_4000',
+           'cafe_count_5000_price_high', 'big_church_count_5000',
+           'church_count_5000', 'mosque_count_5000', 'leisure_count_5000',
+           'sport_count_5000', 'market_count_5000', 'price_doc'],
+          dtype='object', length=276)
+
+
+
+
+<div class="highlight"><pre><span></span><code><span class="n">non_numeric_cols</span>
+</code></pre></div>
+
+
+
+
+    Index(['timestamp', 'product_type', 'sub_area', 'culture_objects_top_25',
+           'thermal_power_plant_raion', 'incineration_raion',
+           'oil_chemistry_raion', 'radiation_raion', 'railroad_terminal_raion',
+           'big_market_raion', 'nuclear_reactor_raion', 'detention_facility_raion',
+           'water_1line', 'big_road1_1line', 'railroad_1line', 'ecology'],
+          dtype='object')
+
+
+
+# Missing Data
+
+<ul>When data is missing for a column in a row. Ways to handle it:
+ <li>   <b><u> How to find out? </u></b>
+    <li> <b> Method #1: missing data (by columns) count & percentage</b>
+
+
+
+<div class="highlight"><pre><span></span><code><span class="n">df</span><span class="p">[</span><span class="n">non_numeric_cols</span><span class="p">]</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</code></pre></div>
+
+    <class 'pandas.core.frame.DataFrame'>
+    RangeIndex: 30471 entries, 0 to 30470
+    Data columns (total 16 columns):
+     #   Column                     Non-Null Count  Dtype 
+    ---  ------                     --------------  ----- 
+     0   timestamp                  30471 non-null  object
+     1   product_type               30471 non-null  object
+     2   sub_area                   30471 non-null  object
+     3   culture_objects_top_25     30471 non-null  object
+     4   thermal_power_plant_raion  30471 non-null  object
+     5   incineration_raion         30471 non-null  object
+     6   oil_chemistry_raion        30471 non-null  object
+     7   radiation_raion            30471 non-null  object
+     8   railroad_terminal_raion    30471 non-null  object
+     9   big_market_raion           30471 non-null  object
+     10  nuclear_reactor_raion      30471 non-null  object
+     11  detention_facility_raion   30471 non-null  object
+     12  water_1line                30471 non-null  object
+     13  big_road1_1line            30471 non-null  object
+     14  railroad_1line             30471 non-null  object
+     15  ecology                    30471 non-null  object
+    dtypes: object(16)
+    memory usage: 3.7+ MB
+
+
+all counts are same for non-numeric columns, hence no missing data
+
+
+<div class="highlight"><pre><span></span><code><span class="n">num_missing</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="n">num_missing</span><span class="p">[:</span><span class="mi">10</span><span class="p">]</span>
+</code></pre></div>
+
+
+
+
+    id                0
+    timestamp         0
+    full_sq           0
+    life_sq        6383
+    floor           167
+    max_floor      9572
+    material       9572
+    build_year    13605
+    num_room       9572
+    kitch_sq       9572
+    dtype: int64
+
+
+
+
+<div class="highlight"><pre><span></span><code><span class="c1"># to caclulate mean of missing values by columns</span>
+<span class="n">num_missing</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="n">num_missing</span><span class="p">[:</span><span class="mi">10</span><span class="p">]</span>
+</code></pre></div>
+
+
+
+
+    id            0.000000
+    timestamp     0.000000
+    full_sq       0.000000
+    life_sq       0.209478
+    floor         0.005481
+    max_floor     0.314135
+    material      0.314135
+    build_year    0.446490
+    num_room      0.314135
+    kitch_sq      0.314135
+    dtype: float64
+
+
+
+ <li> <b> Method #2: missing data (by columns) heatmap </b>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1"># to visualise missing values</span>
+<span class="c1"># heapmap can be created using &quot;seaborn&quot; and &quot;missingno&quot; libraries</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+
+<span class="c1"># since number of columns are very large, it would be difficult to visualise them at the same time. We can learn the patter</span>
+<span class="c1"># pattern of missing data for the first 30 columns</span>
+<span class="n">cols</span><span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">[:</span><span class="mi">30</span><span class="p">]</span>
+<span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;green&quot;</span><span class="p">,</span> <span class="s2">&quot;blue&quot;</span><span class="p">]</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">cols</span><span class="p">]</span><span class="o">.</span><span class="n">isna</span><span class="p">(),</span> <span class="n">cmap</span><span class="o">=</span><span class="n">sns</span><span class="o">.</span><span class="n">color_palette</span><span class="p">(</span><span class="n">colors</span><span class="p">))</span>
+</code></pre></div>
+
+
+
+
+    <matplotlib.axes._subplots.AxesSubplot at 0x24be7d5e520>
+
+
+
+
+
+![[Assets/DataVisualizationNotebook/output_19_1.png]]
+
+
+
+the column life_sq has missing values across different rows. While the column max_floor has most of its missing values 
+
+# missingno
+The missingno library is a small toolset focused on missing data visualizations and utilities. So you can get the same missing data heatmap as above with shorter code.
+
+
+<div class="highlight"><pre><span></span><code><span class="err">!</span><span class="n">pip</span> <span class="n">install</span> <span class="n">missingno</span>
+<span class="kn">import</span> <span class="nn">missingno</span> <span class="k">as</span> <span class="nn">msno</span>
+<span class="n">msno</span><span class="o">.</span><span class="n">matrix</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span> <span class="p">:</span><span class="mi">30</span><span class="p">])</span>
+</code></pre></div>
+
+    Requirement already satisfied: missingno in c:\users\bits-wilp\anaconda3\lib\site-packages (0.5.0)
+    Requirement already satisfied: matplotlib in c:\users\bits-wilp\anaconda3\lib\site-packages (from missingno) (3.2.2)
+    Requirement already satisfied: numpy in c:\users\bits-wilp\anaconda3\lib\site-packages (from missingno) (1.18.5)
+    Requirement already satisfied: scipy in c:\users\bits-wilp\anaconda3\lib\site-packages (from missingno) (1.5.0)
+    Requirement already satisfied: seaborn in c:\users\bits-wilp\anaconda3\lib\site-packages (from missingno) (0.10.1)
+    Requirement already satisfied: kiwisolver>=1.0.1 in c:\users\bits-wilp\anaconda3\lib\site-packages (from matplotlib->missingno) (1.2.0)
+    Requirement already satisfied: pyparsing!=2.0.4,!=2.1.2,!=2.1.6,>=2.0.1 in c:\users\bits-wilp\anaconda3\lib\site-packages (from matplotlib->missingno) (2.4.7)
+    Requirement already satisfied: cycler>=0.10 in c:\users\bits-wilp\anaconda3\lib\site-packages (from matplotlib->missingno) (0.10.0)
+    Requirement already satisfied: python-dateutil>=2.1 in c:\users\bits-wilp\anaconda3\lib\site-packages (from matplotlib->missingno) (2.8.1)
+    Requirement already satisfied: pandas>=0.22.0 in c:\users\bits-wilp\anaconda3\lib\site-packages (from seaborn->missingno) (1.0.5)
+    Requirement already satisfied: six in c:\users\bits-wilp\anaconda3\lib\site-packages (from cycler>=0.10->matplotlib->missingno) (1.15.0)
+    Requirement already satisfied: pytz>=2017.2 in c:\users\bits-wilp\anaconda3\lib\site-packages (from pandas>=0.22.0->seaborn->missingno) (2020.1)
+
+
+
+
+
+    <matplotlib.axes._subplots.AxesSubplot at 0x24be8bc6310>
+
+
+
+
+
+![output_22_2.png](../../../Assets/DataCleaningNotebook/output_22_2.png)
+
+
+
+<li> <b> Method #3: missing data (by rows) histogram </b>
+    <li> summarize the missing data by rows.
+
+
+<div class="highlight"><pre><span></span><code><span class="n">missing_by_row</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">&#39;columns&#39;</span><span class="p">)</span>
+<span class="n">missing_by_row</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">bins</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
+</code></pre></div>
+
+
+
+
+    <matplotlib.axes._subplots.AxesSubplot at 0x24be8e1c610>
+
+
+
+
+
+![[Assets/DataVisualizationNotebook/output_24_1.png]]
+
+
+
+This histogram helps to identify the missing patterns among the 30,471 observations. For example, there are over 6,000 observations with no missing values, and close to 4,000 observations with 1 missing value.
+
+<ul> <b> How to handle missing data </b>
+    <li> Methods:
+    <li> <b>Technique #1:</b> drop columns / features: drop the entire column or features with large number of missing values. But, this will cause a loss of information. Let’s consider the columns with a high percentage of missing.
+
+
+<div class="highlight"><pre><span></span><code><span class="n">num_missing</span><span class="p">[</span><span class="n">num_missing</span> <span class="o">&gt;</span> <span class="mf">0.3</span><span class="p">]</span>
+</code></pre></div>
+
+
+
+
+    max_floor                     0.314135
+    material                      0.314135
+    build_year                    0.446490
+    num_room                      0.314135
+    kitch_sq                      0.314135
+    state                         0.444980
+    hospital_beds_raion           0.473926
+    cafe_sum_500_min_price_avg    0.435857
+    cafe_sum_500_max_price_avg    0.435857
+    cafe_avg_price_500            0.435857
+    dtype: float64
+
+
+
+
+<div class="highlight"><pre><span></span><code><span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;max_floor&#39;</span><span class="p">,</span> <span class="s1">&#39;material&#39;</span><span class="p">,</span> <span class="s1">&#39;build_year&#39;</span><span class="p">,</span> <span class="s1">&#39;num_room&#39;</span><span class="p">,</span> <span class="s1">&#39;kitch_sq&#39;</span><span class="p">,</span><span class="s1">&#39;state&#39;</span><span class="p">,</span><span class="s1">&#39;hospital_beds_raion&#39;</span><span class="p">,</span> <span class="s1">&#39;cafe_sum_500_min_price_avg&#39;</span><span class="p">,</span><span class="s1">&#39;cafe_sum_500_max_price_avg&#39;</span><span class="p">,</span> <span class="s1">&#39;cafe_avg_price_500&#39;</span><span class="p">],</span><span class="n">axis</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</code></pre></div>
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>timestamp</th>
+      <th>full_sq</th>
+      <th>life_sq</th>
+      <th>floor</th>
+      <th>max_floor</th>
+      <th>material</th>
+      <th>build_year</th>
+      <th>num_room</th>
+      <th>kitch_sq</th>
+      <th>...</th>
+      <th>cafe_count_5000_price_2500</th>
+      <th>cafe_count_5000_price_4000</th>
+      <th>cafe_count_5000_price_high</th>
+      <th>big_church_count_5000</th>
+      <th>church_count_5000</th>
+      <th>mosque_count_5000</th>
+      <th>leisure_count_5000</th>
+      <th>sport_count_5000</th>
+      <th>market_count_5000</th>
+      <th>price_doc</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>2011-08-20</td>
+      <td>43</td>
+      <td>27.0</td>
+      <td>4.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>9</td>
+      <td>4</td>
+      <td>0</td>
+      <td>13</td>
+      <td>22</td>
+      <td>1</td>
+      <td>0</td>
+      <td>52</td>
+      <td>4</td>
+      <td>5850000</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>2011-08-23</td>
+      <td>34</td>
+      <td>19.0</td>
+      <td>3.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>15</td>
+      <td>3</td>
+      <td>0</td>
+      <td>15</td>
+      <td>29</td>
+      <td>1</td>
+      <td>10</td>
+      <td>66</td>
+      <td>14</td>
+      <td>6000000</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>2011-08-27</td>
+      <td>43</td>
+      <td>29.0</td>
+      <td>2.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>10</td>
+      <td>3</td>
+      <td>0</td>
+      <td>11</td>
+      <td>27</td>
+      <td>0</td>
+      <td>4</td>
+      <td>67</td>
+      <td>10</td>
+      <td>5700000</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>2011-09-01</td>
+      <td>89</td>
+      <td>50.0</td>
+      <td>9.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>11</td>
+      <td>2</td>
+      <td>1</td>
+      <td>4</td>
+      <td>4</td>
+      <td>0</td>
+      <td>0</td>
+      <td>26</td>
+      <td>3</td>
+      <td>13100000</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>2011-09-05</td>
+      <td>77</td>
+      <td>77.0</td>
+      <td>4.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>319</td>
+      <td>108</td>
+      <td>17</td>
+      <td>135</td>
+      <td>236</td>
+      <td>2</td>
+      <td>91</td>
+      <td>195</td>
+      <td>14</td>
+      <td>16331452</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 292 columns</p>
+</div>
+
+
+
+<li><b> Technique #2: drop rows / observations</b>
+
+
+<div class="highlight"><pre><span></span><code><span class="n">df</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">&#39;any&#39;</span><span class="p">,</span> <span class="n">thresh</span><span class="o">=</span><span class="mi">257</span><span class="p">,</span> <span class="n">subset</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="c1"># thresh argument that specifies the number of non-missing values that should be present for each row in order not to be dropped.</span>
+<span class="n">df</span>
+</code></pre></div>
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>timestamp</th>
+      <th>full_sq</th>
+      <th>life_sq</th>
+      <th>floor</th>
+      <th>max_floor</th>
+      <th>material</th>
+      <th>build_year</th>
+      <th>num_room</th>
+      <th>kitch_sq</th>
+      <th>...</th>
+      <th>cafe_count_5000_price_2500</th>
+      <th>cafe_count_5000_price_4000</th>
+      <th>cafe_count_5000_price_high</th>
+      <th>big_church_count_5000</th>
+      <th>church_count_5000</th>
+      <th>mosque_count_5000</th>
+      <th>leisure_count_5000</th>
+      <th>sport_count_5000</th>
+      <th>market_count_5000</th>
+      <th>price_doc</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>2011-08-20</td>
+      <td>43</td>
+      <td>27.0</td>
+      <td>4.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>9</td>
+      <td>4</td>
+      <td>0</td>
+      <td>13</td>
+      <td>22</td>
+      <td>1</td>
+      <td>0</td>
+      <td>52</td>
+      <td>4</td>
+      <td>5850000</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>2011-08-23</td>
+      <td>34</td>
+      <td>19.0</td>
+      <td>3.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>15</td>
+      <td>3</td>
+      <td>0</td>
+      <td>15</td>
+      <td>29</td>
+      <td>1</td>
+      <td>10</td>
+      <td>66</td>
+      <td>14</td>
+      <td>6000000</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>2011-08-27</td>
+      <td>43</td>
+      <td>29.0</td>
+      <td>2.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>10</td>
+      <td>3</td>
+      <td>0</td>
+      <td>11</td>
+      <td>27</td>
+      <td>0</td>
+      <td>4</td>
+      <td>67</td>
+      <td>10</td>
+      <td>5700000</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>2011-09-01</td>
+      <td>89</td>
+      <td>50.0</td>
+      <td>9.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>11</td>
+      <td>2</td>
+      <td>1</td>
+      <td>4</td>
+      <td>4</td>
+      <td>0</td>
+      <td>0</td>
+      <td>26</td>
+      <td>3</td>
+      <td>13100000</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>2011-09-05</td>
+      <td>77</td>
+      <td>77.0</td>
+      <td>4.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>319</td>
+      <td>108</td>
+      <td>17</td>
+      <td>135</td>
+      <td>236</td>
+      <td>2</td>
+      <td>91</td>
+      <td>195</td>
+      <td>14</td>
+      <td>16331452</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>30466</th>
+      <td>30469</td>
+      <td>2015-06-30</td>
+      <td>44</td>
+      <td>27.0</td>
+      <td>7.0</td>
+      <td>9.0</td>
+      <td>1.0</td>
+      <td>1975.0</td>
+      <td>2.0</td>
+      <td>6.0</td>
+      <td>...</td>
+      <td>15</td>
+      <td>5</td>
+      <td>0</td>
+      <td>15</td>
+      <td>26</td>
+      <td>1</td>
+      <td>2</td>
+      <td>84</td>
+      <td>6</td>
+      <td>7400000</td>
+    </tr>
+    <tr>
+      <th>30467</th>
+      <td>30470</td>
+      <td>2015-06-30</td>
+      <td>86</td>
+      <td>59.0</td>
+      <td>3.0</td>
+      <td>9.0</td>
+      <td>2.0</td>
+      <td>1935.0</td>
+      <td>4.0</td>
+      <td>10.0</td>
+      <td>...</td>
+      <td>313</td>
+      <td>128</td>
+      <td>24</td>
+      <td>98</td>
+      <td>182</td>
+      <td>1</td>
+      <td>82</td>
+      <td>171</td>
+      <td>15</td>
+      <td>25000000</td>
+    </tr>
+    <tr>
+      <th>30468</th>
+      <td>30471</td>
+      <td>2015-06-30</td>
+      <td>45</td>
+      <td>NaN</td>
+      <td>10.0</td>
+      <td>20.0</td>
+      <td>1.0</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>...</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>2</td>
+      <td>12</td>
+      <td>0</td>
+      <td>1</td>
+      <td>11</td>
+      <td>1</td>
+      <td>6970959</td>
+    </tr>
+    <tr>
+      <th>30469</th>
+      <td>30472</td>
+      <td>2015-06-30</td>
+      <td>64</td>
+      <td>32.0</td>
+      <td>5.0</td>
+      <td>15.0</td>
+      <td>1.0</td>
+      <td>2003.0</td>
+      <td>2.0</td>
+      <td>11.0</td>
+      <td>...</td>
+      <td>22</td>
+      <td>1</td>
+      <td>1</td>
+      <td>6</td>
+      <td>31</td>
+      <td>1</td>
+      <td>4</td>
+      <td>65</td>
+      <td>7</td>
+      <td>13500000</td>
+    </tr>
+    <tr>
+      <th>30470</th>
+      <td>30473</td>
+      <td>2015-06-30</td>
+      <td>43</td>
+      <td>28.0</td>
+      <td>1.0</td>
+      <td>9.0</td>
+      <td>1.0</td>
+      <td>1968.0</td>
+      <td>2.0</td>
+      <td>6.0</td>
+      <td>...</td>
+      <td>5</td>
+      <td>2</td>
+      <td>0</td>
+      <td>7</td>
+      <td>16</td>
+      <td>0</td>
+      <td>9</td>
+      <td>54</td>
+      <td>10</td>
+      <td>5600000</td>
+    </tr>
+  </tbody>
+</table>
+<p>29779 rows × 292 columns</p>
+</div>
+
+
+
+<li> <b> Technique #3: impute the missing with constant values.</b>
+
+
+<div class="highlight"><pre><span></span><code><span class="n">df_copy</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">numeric_cols</span> <span class="o">=</span> <span class="n">df_copy</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;number&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">columns</span>
+<span class="n">df_copy</span><span class="p">[</span><span class="n">numeric_cols</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_copy</span><span class="p">[</span><span class="n">numeric_cols</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="o">-</span><span class="mi">999</span><span class="p">)</span>
+<span class="n">df_copy</span><span class="p">[</span><span class="n">non_numeric_cols</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_copy</span><span class="p">[</span><span class="n">non_numeric_cols</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="s1">&#39;_MISSING_&#39;</span><span class="p">)</span>
+</code></pre></div>
+
+<li> <b> Technique #4: impute the missing with statistics </b>
+
+
+
+<div class="highlight"><pre><span></span><code><span class="c1">#imputing numeric columns by median</span>
+<span class="n">med</span> <span class="o">=</span> <span class="n">df_copy</span><span class="p">[</span><span class="n">numeric_cols</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">()</span>
+<span class="n">df_copy</span><span class="p">[</span><span class="n">numeric_cols</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_copy</span><span class="p">[</span><span class="n">numeric_cols</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">med</span><span class="p">)</span>
+</code></pre></div>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1"># imputing non-numeric columns by mode</span>
+<span class="n">most_freq</span> <span class="o">=</span> <span class="n">df_copy</span><span class="p">[</span><span class="n">non_numeric_cols</span><span class="p">]</span><span class="o">.</span><span class="n">mode</span><span class="p">()</span>
+<span class="n">df_copy</span><span class="p">[</span><span class="n">non_numeric_cols</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_copy</span><span class="p">[</span><span class="n">non_numeric_cols</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">most_freq</span><span class="p">)</span>
+</code></pre></div>
+
+
+<div class="highlight"><pre><span></span><code><span class="n">most_freq</span>
+</code></pre></div>
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>timestamp</th>
+      <th>product_type</th>
+      <th>sub_area</th>
+      <th>culture_objects_top_25</th>
+      <th>thermal_power_plant_raion</th>
+      <th>incineration_raion</th>
+      <th>oil_chemistry_raion</th>
+      <th>radiation_raion</th>
+      <th>railroad_terminal_raion</th>
+      <th>big_market_raion</th>
+      <th>nuclear_reactor_raion</th>
+      <th>detention_facility_raion</th>
+      <th>water_1line</th>
+      <th>big_road1_1line</th>
+      <th>railroad_1line</th>
+      <th>ecology</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2014-12-16</td>
+      <td>Investment</td>
+      <td>Poselenie Sosenskoe</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>poor</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+<div class="highlight"><pre><span></span><code><span class="c1">#to check for missing values</span>
+<span class="n">df_copy</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</code></pre></div>
+
+
+
+
+    id                    0
+    timestamp             0
+    full_sq               0
+    life_sq               0
+    floor                 0
+                         ..
+    mosque_count_5000     0
+    leisure_count_5000    0
+    sport_count_5000      0
+    market_count_5000     0
+    price_doc             0
+    Length: 292, dtype: int64
+
+
+
+# Irregular data (outliers)
+
+Outliers could bias our data analysis results, providing a misleading representation of the data. Outliers could be real outliers or mistakes.
+
+<ul><b> How to detect? </b>
+<li><b> Method #1: descriptive statistics </b>
+
+
+<div class="highlight"><pre><span></span><code><span class="n">df_copy</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</code></pre></div>
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>full_sq</th>
+      <th>life_sq</th>
+      <th>floor</th>
+      <th>max_floor</th>
+      <th>material</th>
+      <th>build_year</th>
+      <th>num_room</th>
+      <th>kitch_sq</th>
+      <th>state</th>
+      <th>...</th>
+      <th>big_church_count_5000</th>
+      <th>church_count_5000</th>
+      <th>mosque_count_5000</th>
+      <th>leisure_count_5000</th>
+      <th>sport_count_5000</th>
+      <th>market_count_5000</th>
+      <th>price_doc</th>
+      <th>year</th>
+      <th>month</th>
+      <th>weekday</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>2.977900e+04</td>
+      <td>2.977900e+04</td>
+      <td>2.977900e+04</td>
+      <td>2.977900e+04</td>
+      <td>2.977900e+04</td>
+      <td>2.977900e+04</td>
+      <td>2.977900e+04</td>
+      <td>2.977900e+04</td>
+      <td>2.977900e+04</td>
+      <td>2.977900e+04</td>
+      <td>...</td>
+      <td>2.977900e+04</td>
+      <td>2.977900e+04</td>
+      <td>2.977900e+04</td>
+      <td>2.977900e+04</td>
+      <td>2.977900e+04</td>
+      <td>2.977900e+04</td>
+      <td>2.977900e+04</td>
+      <td>29779.000000</td>
+      <td>29779.000000</td>
+      <td>29779.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>3.927294e-17</td>
+      <td>1.133705e-15</td>
+      <td>-6.050975e-16</td>
+      <td>-3.694486e-15</td>
+      <td>-3.424010e-14</td>
+      <td>2.521536e-16</td>
+      <td>6.337155e-16</td>
+      <td>1.510536e-13</td>
+      <td>-2.153204e-13</td>
+      <td>1.240557e-13</td>
+      <td>...</td>
+      <td>1.864436e-15</td>
+      <td>-1.152501e-16</td>
+      <td>-2.969346e-15</td>
+      <td>1.061662e-15</td>
+      <td>-3.434236e-16</td>
+      <td>3.142879e-17</td>
+      <td>3.015190e-15</td>
+      <td>2013.453105</td>
+      <td>6.744014</td>
+      <td>2.196783</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>1.000017e+00</td>
+      <td>1.000017e+00</td>
+      <td>1.000017e+00</td>
+      <td>1.000017e+00</td>
+      <td>1.000017e+00</td>
+      <td>1.000017e+00</td>
+      <td>1.000017e+00</td>
+      <td>1.000017e+00</td>
+      <td>1.000017e+00</td>
+      <td>1.000017e+00</td>
+      <td>...</td>
+      <td>1.000017e+00</td>
+      <td>1.000017e+00</td>
+      <td>1.000017e+00</td>
+      <td>1.000017e+00</td>
+      <td>1.000017e+00</td>
+      <td>1.000017e+00</td>
+      <td>1.000017e+00</td>
+      <td>0.962059</td>
+      <td>3.523263</td>
+      <td>1.576159</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>-1.733558e+00</td>
+      <td>-1.413996e+00</td>
+      <td>-2.004501e+00</td>
+      <td>-1.344496e+01</td>
+      <td>-1.484404e+00</td>
+      <td>-1.484503e+00</td>
+      <td>-1.975412e-02</td>
+      <td>-1.484507e+00</td>
+      <td>-1.482597e+00</td>
+      <td>-1.130673e+00</td>
+      <td>...</td>
+      <td>-5.234219e-01</td>
+      <td>-6.453354e-01</td>
+      <td>-7.320273e-01</td>
+      <td>-4.259748e-01</td>
+      <td>-1.165510e+00</td>
+      <td>-1.251928e+00</td>
+      <td>-1.477355e+00</td>
+      <td>2011.000000</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>-8.634904e-01</td>
+      <td>-4.234363e-01</td>
+      <td>4.506506e-01</td>
+      <td>1.039594e-02</td>
+      <td>-1.484404e+00</td>
+      <td>-1.484503e+00</td>
+      <td>-1.975412e-02</td>
+      <td>-1.484507e+00</td>
+      <td>-1.482597e+00</td>
+      <td>-1.130673e+00</td>
+      <td>...</td>
+      <td>-4.553321e-01</td>
+      <td>-4.568299e-01</td>
+      <td>-7.320273e-01</td>
+      <td>-4.259748e-01</td>
+      <td>-9.059867e-01</td>
+      <td>-1.046875e+00</td>
+      <td>-4.935775e-01</td>
+      <td>2013.000000</td>
+      <td>4.000000</td>
+      <td>1.000000</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>1.914127e-03</td>
+      <td>-1.366954e-01</td>
+      <td>4.748155e-01</td>
+      <td>6.410995e-02</td>
+      <td>6.657718e-01</td>
+      <td>6.718609e-01</td>
+      <td>5.709977e-03</td>
+      <td>6.716512e-01</td>
+      <td>6.609854e-01</td>
+      <td>8.821739e-01</td>
+      <td>...</td>
+      <td>-2.851076e-01</td>
+      <td>-3.102146e-01</td>
+      <td>-7.320273e-01</td>
+      <td>-3.297071e-01</td>
+      <td>-1.057884e-01</td>
+      <td>-2.266611e-01</td>
+      <td>-1.863383e-01</td>
+      <td>2014.000000</td>
+      <td>6.000000</td>
+      <td>2.000000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>8.653282e-01</td>
+      <td>2.282476e-01</td>
+      <td>5.013968e-01</td>
+      <td>1.178240e-01</td>
+      <td>6.807036e-01</td>
+      <td>6.718609e-01</td>
+      <td>5.916512e-03</td>
+      <td>6.738074e-01</td>
+      <td>6.759905e-01</td>
+      <td>8.841867e-01</td>
+      <td>...</td>
+      <td>-1.148831e-01</td>
+      <td>-5.887390e-02</td>
+      <td>9.015939e-01</td>
+      <td>-8.903773e-02</td>
+      <td>4.781401e-01</td>
+      <td>1.003659e+00</td>
+      <td>2.398021e-01</td>
+      <td>2014.000000</td>
+      <td>10.000000</td>
+      <td>3.000000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>1.732382e+00</td>
+      <td>1.374207e+02</td>
+      <td>1.848007e+01</td>
+      <td>1.004105e+00</td>
+      <td>8.961478e-01</td>
+      <td>6.826427e-01</td>
+      <td>1.725493e+02</td>
+      <td>7.104621e-01</td>
+      <td>4.976016e+00</td>
+      <td>9.465850e-01</td>
+      <td>...</td>
+      <td>4.617358e+00</td>
+      <td>4.590928e+00</td>
+      <td>2.535215e+00</td>
+      <td>4.676216e+00</td>
+      <td>3.549171e+00</td>
+      <td>3.054193e+00</td>
+      <td>2.163833e+01</td>
+      <td>2015.000000</td>
+      <td>12.000000</td>
+      <td>6.000000</td>
+    </tr>
+  </tbody>
+</table>
+<p>8 rows × 279 columns</p>
+</div>
+
+
+
+<li> <b> Method #2: histogram & box plot </b>
+
+
+<div class="highlight"><pre><span></span><code><span class="n">df_copy</span><span class="p">[</span><span class="s1">&#39;full_sq&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">bins</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+</code></pre></div>
+
+
+
+
+    <matplotlib.axes._subplots.AxesSubplot at 0x24be5f86cd0>
+
+
+
+
+
+![output_43_1.png](../../../Assets/DataCleaningNotebook/output_43_1.png)
+
+
+
+
+<div class="highlight"><pre><span></span><code><span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">df_copy</span><span class="p">[</span><span class="s1">&#39;full_sq&#39;</span><span class="p">])</span>
+</code></pre></div>
+
+
+
+
+    <matplotlib.axes._subplots.AxesSubplot at 0x24be865cc10>
+
+
+
+
+
+![output_44_1.png](../../../Assets/DataCleaningNotebook/output_44_1.png)
+
+
+
+<li> <b> Method #3: bar chart</b>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1"># to check outliers in categorical attributes</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;ecology&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;bar&#39;</span><span class="p">)</span>
+ <span class="c1"># But if there is a category with only one value called ‘extraordinary’, that could be considered an ‘outlier’.</span>
+</code></pre></div>
+
+
+
+
+    <matplotlib.axes._subplots.AxesSubplot at 0x24b80188dc0>
+
+
+
+
+
+![output_46_1.png](../../../Assets/DataCleaningNotebook/output_46_1.png)
+
+
+
+<li> <b> How to handle missing data </b>
+
+<li> Unnecessary data
+
+<li> <b>Unnecessary type #1: repetitive & uninformative </b>
+
+When an extremely high percentage of the column has a repetitive value,
+
+
+<div class="highlight"><pre><span></span><code><span class="n">num_rows</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">df_copy</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">df_copy</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
+    <span class="n">cnts</span> <span class="o">=</span> <span class="n">df_copy</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">(</span><span class="n">dropna</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">top_pct</span> <span class="o">=</span> <span class="p">(</span><span class="n">cnts</span><span class="o">/</span><span class="n">num_rows</span><span class="p">)</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+    <span class="k">if</span> <span class="n">top_pct</span> <span class="o">&gt;</span> <span class="mf">0.999</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{0}</span><span class="s1">: </span><span class="si">{1:.2f}</span><span class="s1">%&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">col</span><span class="p">,</span> <span class="n">top_pct</span><span class="o">*</span><span class="mi">100</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">cnts</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">()</span>
+</code></pre></div>
+
+<li> <b> Unnecessary type #2: irrelevant
+
+ If features are not related to the question we are trying to solve, they are irrelevant. Use "drop()" method to drop such features
+
+<li> <b> Unnecessary type #3: duplicates </b>
+    <li>duplicate occurs when all the columns’ values within the observations are the same.
+
+
+<div class="highlight"><pre><span></span><code><span class="n">df_copy</span><span class="p">[</span><span class="n">df_copy</span><span class="o">.</span><span class="n">duplicated</span><span class="p">()]</span>
+</code></pre></div>
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>timestamp</th>
+      <th>full_sq</th>
+      <th>life_sq</th>
+      <th>floor</th>
+      <th>max_floor</th>
+      <th>material</th>
+      <th>build_year</th>
+      <th>num_room</th>
+      <th>kitch_sq</th>
+      <th>...</th>
+      <th>cafe_count_5000_price_2500</th>
+      <th>cafe_count_5000_price_4000</th>
+      <th>cafe_count_5000_price_high</th>
+      <th>big_church_count_5000</th>
+      <th>church_count_5000</th>
+      <th>mosque_count_5000</th>
+      <th>leisure_count_5000</th>
+      <th>sport_count_5000</th>
+      <th>market_count_5000</th>
+      <th>price_doc</th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+<p>0 rows × 292 columns</p>
+</div>
+
+
+
+
+<div class="highlight"><pre><span></span><code><span class="c1">#We first drop id, and then see if there are duplicated rows from the DataFrame</span>
+
+<span class="n">df_copy</span><span class="p">[</span><span class="n">df_copy</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">duplicated</span><span class="p">()]</span>
+</code></pre></div>
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>timestamp</th>
+      <th>full_sq</th>
+      <th>life_sq</th>
+      <th>floor</th>
+      <th>max_floor</th>
+      <th>material</th>
+      <th>build_year</th>
+      <th>num_room</th>
+      <th>kitch_sq</th>
+      <th>...</th>
+      <th>cafe_count_5000_price_2500</th>
+      <th>cafe_count_5000_price_4000</th>
+      <th>cafe_count_5000_price_high</th>
+      <th>big_church_count_5000</th>
+      <th>church_count_5000</th>
+      <th>mosque_count_5000</th>
+      <th>leisure_count_5000</th>
+      <th>sport_count_5000</th>
+      <th>market_count_5000</th>
+      <th>price_doc</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>4328</th>
+      <td>4331</td>
+      <td>2012-10-22</td>
+      <td>61</td>
+      <td>-999.0</td>
+      <td>18.0</td>
+      <td>-999.0</td>
+      <td>-999.0</td>
+      <td>-999.0</td>
+      <td>-999.0</td>
+      <td>-999.0</td>
+      <td>...</td>
+      <td>11</td>
+      <td>2</td>
+      <td>1</td>
+      <td>5</td>
+      <td>4</td>
+      <td>0</td>
+      <td>1</td>
+      <td>32</td>
+      <td>5</td>
+      <td>8248500</td>
+    </tr>
+    <tr>
+      <th>6991</th>
+      <td>6994</td>
+      <td>2013-04-03</td>
+      <td>42</td>
+      <td>-999.0</td>
+      <td>2.0</td>
+      <td>-999.0</td>
+      <td>-999.0</td>
+      <td>-999.0</td>
+      <td>-999.0</td>
+      <td>-999.0</td>
+      <td>...</td>
+      <td>3</td>
+      <td>2</td>
+      <td>0</td>
+      <td>2</td>
+      <td>16</td>
+      <td>1</td>
+      <td>0</td>
+      <td>20</td>
+      <td>4</td>
+      <td>3444000</td>
+    </tr>
+    <tr>
+      <th>8059</th>
+      <td>8062</td>
+      <td>2013-05-22</td>
+      <td>68</td>
+      <td>-999.0</td>
+      <td>2.0</td>
+      <td>-999.0</td>
+      <td>-999.0</td>
+      <td>-999.0</td>
+      <td>-999.0</td>
+      <td>-999.0</td>
+      <td>...</td>
+      <td>3</td>
+      <td>2</td>
+      <td>0</td>
+      <td>2</td>
+      <td>16</td>
+      <td>1</td>
+      <td>0</td>
+      <td>20</td>
+      <td>4</td>
+      <td>5406690</td>
+    </tr>
+    <tr>
+      <th>8653</th>
+      <td>8656</td>
+      <td>2013-06-24</td>
+      <td>40</td>
+      <td>-999.0</td>
+      <td>12.0</td>
+      <td>-999.0</td>
+      <td>-999.0</td>
+      <td>-999.0</td>
+      <td>-999.0</td>
+      <td>-999.0</td>
+      <td>...</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>4</td>
+      <td>6</td>
+      <td>0</td>
+      <td>0</td>
+      <td>4</td>
+      <td>1</td>
+      <td>4112800</td>
+    </tr>
+    <tr>
+      <th>14004</th>
+      <td>14007</td>
+      <td>2014-01-22</td>
+      <td>46</td>
+      <td>28.0</td>
+      <td>1.0</td>
+      <td>9.0</td>
+      <td>1.0</td>
+      <td>1968.0</td>
+      <td>2.0</td>
+      <td>5.0</td>
+      <td>...</td>
+      <td>10</td>
+      <td>1</td>
+      <td>0</td>
+      <td>13</td>
+      <td>15</td>
+      <td>1</td>
+      <td>1</td>
+      <td>61</td>
+      <td>4</td>
+      <td>3000000</td>
+    </tr>
+    <tr>
+      <th>17404</th>
+      <td>17407</td>
+      <td>2014-04-15</td>
+      <td>134</td>
+      <td>134.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>3.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>5798496</td>
+    </tr>
+    <tr>
+      <th>26675</th>
+      <td>26678</td>
+      <td>2014-12-17</td>
+      <td>62</td>
+      <td>-999.0</td>
+      <td>9.0</td>
+      <td>17.0</td>
+      <td>1.0</td>
+      <td>-999.0</td>
+      <td>2.0</td>
+      <td>1.0</td>
+      <td>...</td>
+      <td>371</td>
+      <td>141</td>
+      <td>26</td>
+      <td>150</td>
+      <td>249</td>
+      <td>2</td>
+      <td>105</td>
+      <td>203</td>
+      <td>13</td>
+      <td>6552000</td>
+    </tr>
+    <tr>
+      <th>28361</th>
+      <td>28364</td>
+      <td>2015-03-14</td>
+      <td>62</td>
+      <td>-999.0</td>
+      <td>2.0</td>
+      <td>17.0</td>
+      <td>1.0</td>
+      <td>-999.0</td>
+      <td>2.0</td>
+      <td>1.0</td>
+      <td>...</td>
+      <td>371</td>
+      <td>141</td>
+      <td>26</td>
+      <td>150</td>
+      <td>249</td>
+      <td>2</td>
+      <td>105</td>
+      <td>203</td>
+      <td>13</td>
+      <td>6520500</td>
+    </tr>
+    <tr>
+      <th>28712</th>
+      <td>28715</td>
+      <td>2015-03-30</td>
+      <td>41</td>
+      <td>41.0</td>
+      <td>11.0</td>
+      <td>17.0</td>
+      <td>1.0</td>
+      <td>2016.0</td>
+      <td>1.0</td>
+      <td>41.0</td>
+      <td>...</td>
+      <td>2</td>
+      <td>2</td>
+      <td>0</td>
+      <td>2</td>
+      <td>9</td>
+      <td>0</td>
+      <td>0</td>
+      <td>7</td>
+      <td>2</td>
+      <td>4114580</td>
+    </tr>
+  </tbody>
+</table>
+<p>9 rows × 292 columns</p>
+</div>
+
+
+
+
+<div class="highlight"><pre><span></span><code><span class="n">df_dedupped</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">drop_duplicates</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df_dedupped</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+</code></pre></div>
+
+    (29779, 292)
+    (29770, 291)
+
+
+# Inconsistent data
+
+<li> <b>Inconsistent type #1: capitalization </b>
+Inconsistent use of upper and lower cases in categorical values is typical. We need to clean it since Python is case-sensitive.
+
+
+<div class="highlight"><pre><span></span><code><span class="c1"># to print full numpy array without ...</span>
+<span class="c1">#import numpy as np</span>
+<span class="c1">#import sys</span>
+<span class="c1">#np.set_printoptions(threshold=sys.maxsize)</span>
+
+
+<span class="c1"># to display the entire list without ...</span>
+<span class="k">with</span> <span class="n">pd</span><span class="o">.</span><span class="n">option_context</span><span class="p">(</span><span class="s1">&#39;display.max_rows&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="s1">&#39;display.max_columns&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">):</span>  <span class="c1"># more options can be specified also</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">df_copy</span><span class="p">[</span><span class="s1">&#39;sub_area&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">(</span><span class="n">dropna</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
+</code></pre></div>
+
+
+    Poselenie Sosenskoe          1617
+    Nekrasovka                   1611
+    Poselenie Vnukovskoe         1290
+    Poselenie Moskovskij          925
+    Poselenie Voskresenskoe       713
+    Mitino                        679
+    Tverskoe                      678
+    Krjukovo                      518
+    Mar'ino                       508
+    Juzhnoe Butovo                451
+    Poselenie Shherbinka          443
+    Solncevo                      421
+    Zapadnoe Degunino             410
+    Poselenie Desjonovskoe        362
+    Otradnoe                      353
+    Nagatinskij Zaton             327
+    Nagornoe                      305
+    Bogorodskoe                   305
+    Strogino                      301
+    Izmajlovo                     300
+    Tekstil'shhiki                298
+    Ljublino                      297
+    Gol'janovo                    295
+    Severnoe Tushino              282
+    Chertanovo Juzhnoe            273
+    Birjulevo Vostochnoe          268
+    Vyhino-Zhulebino              264
+    Horoshevo-Mnevniki            262
+    Zjuzino                       259
+    Ochakovo-Matveevskoe          255
+    Perovo                        247
+    Ramenki                       241
+    Jasenevo                      237
+    Kosino-Uhtomskoe              237
+    Bibirevo                      230
+    Golovinskoe                   224
+    Poselenie Filimonkovskoe      221
+    Caricyno                      220
+    Kuz'minki                     220
+    Kon'kovo                      220
+    Veshnjaki                     213
+    Akademicheskoe                211
+    Orehovo-Borisovo Juzhnoe      208
+    Koptevo                       207
+    Orehovo-Borisovo Severnoe     206
+    Novogireevo                   201
+    Chertanovo Severnoe           200
+    Danilovskoe                   199
+    Ivanovskoe                    197
+    Mozhajskoe                    197
+    Chertanovo Central'noe        196
+    Pechatniki                    192
+    Presnenskoe                   190
+    Sokolinaja Gora               188
+    Obruchevskoe                  185
+    Kuncevo                       184
+    Brateevo                      182
+    Severnoe Butovo               182
+    Rjazanskij                    180
+    Hovrino                       178
+    Losinoostrovskoe              177
+    Juzhnoe Tushino               175
+    Dmitrovskoe                   174
+    Taganskoe                     173
+    Severnoe Medvedkovo           167
+    Beskudnikovskoe               166
+    Teplyj Stan                   165
+    Pokrovskoe Streshnevo         164
+    Severnoe Izmajlovo            163
+    Cheremushki                   158
+    Nagatino-Sadovniki            158
+    Troickij okrug                158
+    Shhukino                      155
+    Timirjazevskoe                154
+    Vostochnoe Izmajlovo          154
+    Preobrazhenskoe               152
+    Novo-Peredelkino              149
+    Filevskij Park                148
+    Lomonosovskoe                 147
+    Kotlovka                      147
+    Juzhnoe Medvedkovo            143
+    Poselenie Pervomajskoe        142
+    Novokosino                    139
+    Fili Davydkovo                137
+    Horoshevskoe                  136
+    Levoberezhnoe                 135
+    Donskoe                       135
+    Vojkovskoe                    131
+    Sviblovo                      131
+    Zjablikovo                    127
+    Troparevo-Nikulino            126
+    Lianozovo                     126
+    Juzhnoportovoe                126
+    Ajeroport                     123
+    Babushkinskoe                 123
+    Jaroslavskoe                  121
+    Lefortovo                     119
+    Vostochnoe Degunino           118
+    Mar'ina Roshha                116
+    Birjulevo Zapadnoe            115
+    Matushkino                    111
+    Savelki                       105
+    Krylatskoe                    103
+    Butyrskoe                     101
+    Silino                        100
+    Prospekt Vernadskogo          100
+    Alekseevskoe                  100
+    Moskvorech'e-Saburovo          99
+    Basmannoe                      98
+    Meshhanskoe                    94
+    Staroe Krjukovo                92
+    Hamovniki                      90
+    Savelovskoe                    85
+    Marfino                        85
+    Jakimanka                      81
+    Ostankinskoe                   79
+    Gagarinskoe                    79
+    Nizhegorodskoe                 77
+    Sokol                          72
+    Altuf'evskoe                   68
+    Rostokino                      64
+    Kurkino                        62
+    Sokol'niki                     60
+    Begovoe                        60
+    Metrogorodok                   58
+    Dorogomilovo                   56
+    Zamoskvorech'e                 50
+    Kapotnja                       49
+    Vnukovo                        44
+    Krasnosel'skoe                 37
+    Severnoe                       37
+    Poselenie Rogovskoe            30
+    Poselenie Rjazanovskoe         26
+    Poselenie Kokoshkino           20
+    Poselenie Mosrentgen           19
+    Poselenie Krasnopahorskoe      19
+    Arbat                          15
+    Vostochnoe                      7
+    Poselenie Marushkinskoe         6
+    Molzhaninovskoe                 3
+    Poselenie Voronovskoe           2
+    Name: sub_area, dtype: int64
+
+
+ ‘Poselenie Sosenskoe’ and ‘pOseleNie sosenskeo’ could refer to the same district.
+
+<li> <b> How to handle? </b>
+To avoid this, we can lowercase (or uppercase) all letters.
+
+
+<div class="highlight"><pre><span></span><code><span class="n">df_copy</span><span class="p">[</span><span class="s1">&#39;sub_area_lower&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_copy</span><span class="p">[</span><span class="s1">&#39;sub_area&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+<span class="n">df_copy</span><span class="p">[</span><span class="s1">&#39;sub_area_lower&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">(</span><span class="n">dropna</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</code></pre></div>
+
+
+
+
+    poselenie sosenskoe        1617
+    nekrasovka                 1611
+    poselenie vnukovskoe       1290
+    poselenie moskovskij        925
+    poselenie voskresenskoe     713
+                               ... 
+    arbat                        15
+    vostochnoe                    7
+    poselenie marushkinskoe       6
+    molzhaninovskoe               3
+    poselenie voronovskoe         2
+    Name: sub_area_lower, Length: 141, dtype: int64
+
+
+
+<ul> <b> Inconsistent type #2: typos of categorical values </b>
+
+A categorical column takes on a limited and usually fixed number of possible values. Sometimes it shows other values due to reasons like typos.
+
+<ul> <b> How to find out? </b>
+Let’s see an example. Within the code below:
+
+<li> We generate a new DataFrame, df_city_ex
+There is only one column that stores the city names. There are misspellings. For example, ‘torontoo’ and ‘tronto’ both refer to the city of ‘toronto’.
+<li> The variable cities stores the 4 correct names of ‘toronto’, ‘vancouver’, ‘montreal’, and ‘calgary’.
+<li> To identify typos, we use fuzzy logic matches. We use edit_distance from nltk, which measures the number of operations (e.g., substitution, insertion, deletion) needed to change from one string into another string.
+<li> We calculate the distance between the actual values and the correct values.
+
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Levenshtein Distance, Hamming distance</span>
+<span class="n">df_city_ex</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;city&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;torontooo&#39;</span><span class="p">,</span> <span class="s1">&#39;toronto&#39;</span><span class="p">,</span> <span class="s1">&#39;turonto&#39;</span><span class="p">,</span> <span class="s1">&#39;vancouver&#39;</span><span class="p">,</span> <span class="s1">&#39;vancover&#39;</span><span class="p">,</span> <span class="s1">&#39;vancouvr&#39;</span><span class="p">,</span> <span class="s1">&#39;montreal&#39;</span><span class="p">,</span> <span class="s1">&#39;calgary&#39;</span><span class="p">]})</span>
+<span class="n">df_city_ex</span><span class="p">[</span><span class="s1">&#39;city&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+</code></pre></div>
+
+
+
+
+    vancouvr     1
+    montreal     1
+    vancover     1
+    turonto      1
+    calgary      1
+    vancouver    1
+    torontooo    1
+    toronto      1
+    Name: city, dtype: int64
+
+
+
+
+<div class="highlight"><pre><span></span><code><span class="ch">#!pip install pyspellchecker</span>
+
+<span class="kn">from</span> <span class="nn">spellchecker</span> <span class="kn">import</span> <span class="n">SpellChecker</span>
+<span class="n">spell</span> <span class="o">=</span> <span class="n">SpellChecker</span><span class="p">()</span>
+<span class="n">i</span><span class="o">=</span><span class="mi">0</span>
+<span class="k">for</span> <span class="n">city</span> <span class="ow">in</span> <span class="n">df_city_ex</span><span class="p">[</span><span class="s1">&#39;city&#39;</span><span class="p">]:</span>
+    <span class="c1"># Get the one `most likely` answer</span>
+    <span class="n">df_city_ex</span><span class="o">.</span><span class="n">at</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="s1">&#39;city&#39;</span><span class="p">]</span><span class="o">=</span> <span class="n">spell</span><span class="o">.</span><span class="n">correction</span><span class="p">(</span><span class="n">city</span><span class="p">)</span>
+    <span class="n">i</span><span class="o">=</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span>
+    <span class="c1">#print(spell.correction(city))</span>
+<span class="n">df_city_ex</span><span class="p">[</span><span class="s1">&#39;city&#39;</span><span class="p">]</span>
+</code></pre></div>
+
+
+
+
+    0      toronto
+    1      toronto
+    2      toronto
+    3    vancouver
+    4    vancouver
+    5    vancouver
+    6     montreal
+    7      calgary
+    Name: city, dtype: object
+
+
+
+
+<div class="highlight"><pre><span></span><code><span class="n">df_city_ex</span><span class="p">[</span><span class="s1">&#39;city&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+</code></pre></div>
+
+
+
+
+    vancouver    3
+    toronto      3
+    montreal     1
+    calgary      1
+    Name: city, dtype: int64
+
+
+
+---
+Tags: [!AMLIndex](./!AMLIndex.md)
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="AMLAssignment1.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Applied ML Assignment 1" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Applied ML Assignment 1
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="DataPreprocessingNotebook.html" class="md-footer__link md-footer__link--next" aria-label="Next: Notebook for data preprocessing" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Notebook for data preprocessing
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../../assets/javascripts/workers/search.477d984a.min.js", "version": null}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.ddd52ceb.min.js"></script>
+      
+        <script src="../../../../javascripts/config.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>
